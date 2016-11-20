@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+ <path>Aircraft/IL-76MD/Models/Effects/ground/chokes.ac</path>
+ 
+ <animation>
+  <type>scale</type>
+  <object-name>choke</object-name>
+  <property>sim/multiplay/generic/int[3]</property>
+  <offset>1</offset>
+  <x-max>1.0</x-max>
+  <y-max>1.0</y-max>
+  <z-max>1.0</z-max>
+  <x-factor>1.0</x-factor>
+  <y-factor>1.0</y-factor>
+  <z-factor>1.0</z-factor>
+ </animation>
+
+
+</PropertyList>

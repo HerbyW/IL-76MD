@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+  
+  <path>yokes.ac</path>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>holm</object-name>
+    <object-name>yoke</object-name>
+    <property>controls/flight/elevator</property>
+    <factor> -5 </factor>
+    <center>
+      <x-m> 0.229 </x-m>
+      <y-m> -0.662 </y-m>
+      <z-m> -0.618 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>yoke</object-name>
+    <property>controls/flight/aileron</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 0.305 </x-m>
+      <y-m> -0.662 </y-m>
+      <z-m> -0.0832 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>holm.001</object-name>
+    <object-name>yoke.001</object-name>
+    <property>controls/flight/elevator</property>
+    <factor> -5 </factor>
+    <center>
+      <x-m> 0.229 </x-m>
+      <y-m> 0.9388 </y-m>
+      <z-m> -0.5219 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>yoke.001</object-name>
+    <property>controls/flight/aileron</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 0.305 </x-m>
+      <y-m> 0.662 </y-m>
+      <z-m> -0.0832 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+
+  <animation>
+    <type>select</type>
+    <object-name>holm</object-name>
+    <object-name>yoke</object-name>
+    <object-name>holm.001</object-name>
+    <object-name>yoke.001</object-name>
+    <condition>
+      <property>sim/model/hide-yoke</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>holm</object-name>
+    <object-name>yoke</object-name>
+    <object-name>holm.001</object-name>
+    <object-name>yoke.001</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/hide-yoke</property>
+      </binding>      
+    </action>
+  </animation>
+  
+</PropertyList>

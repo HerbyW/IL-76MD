@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+
+
+<PropertyList>
+
+  <path>Rosenbauer_FLF_Panther8x8SWB.ac</path>
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>1500</max-m>
+  </animation>
+  
+  <animation>
+    <name>Rosenbauer3</name>    
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <name>Rosenbauer3</name>  
+    <condition>
+      <and>
+	<not-equals>
+	  <property>sim/multiplay/generic/float[15]</property>
+	  <value>0.0</value>
+	</not-equals>
+	<not-equals>
+	  <property>sim/multiplay/generic/float[16]</property>
+	  <value>0.0</value>
+	</not-equals>
+	<not-equals>
+	  <property>sim/multiplay/generic/float[17]</property>
+	  <value>0.0</value>
+	</not-equals>
+      </and>
+    </condition>
+  </animation>
+  
+  
+  <animation>
+    <type>scale</type>
+    <name>Rosenbauer3</name>  
+    <property>sim/multiplay/generic/int[19]</property>
+    <offset>1</offset>
+    <x-max>0.85</x-max>
+    <y-max>0.85</y-max>
+    <z-max>0.85</z-max>
+    <x-factor>0.85</x-factor>
+    <y-factor>0.85</y-factor>
+    <z-factor>0.85</z-factor>
+  </animation>
+  
+</PropertyList>

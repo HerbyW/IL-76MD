@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+
+<controls>
+    <autostart type="int">0</autostart>
+    <lighting>
+       <nav-lights type="int">0</nav-lights>
+       <beacon type="bool">false</beacon>
+       <strobe type="bool">false</strobe>
+       <landing-lights type="int">0</landing-lights>
+       <taxi-lights type="int">0</taxi-lights>
+    </lighting>
+     <engines>
+      <engine n="0">
+	<starting type="int">0</starting>
+        <boost type="double">0</boost>
+	<condition>0</condition>
+	<reverserminus type="float">1.0</reverserminus>
+      </engine>
+      <engine n="1">
+	<starting type="int">0</starting>
+	<boost type="double">0</boost>
+	<condition>0</condition>
+      </engine>
+      <engine n="2">
+	<starting type="int">0</starting>
+        <boost type="double">0</boost>        
+	<condition>0</condition>
+      </engine>
+      <engine n="3">
+	<starting type="int">0</starting>
+        <boost type="double">0</boost>
+	<condition>0</condition>
+      </engine>
+    </engines>
+    <gear>
+      <brake-parking type="bool">1</brake-parking>
+      <runway type="double">0</runway>
+    </gear>
+    <paratroopers>
+      <paratroopers type="int">0</paratroopers>
+      <weight type="float">0</weight>      
+    </paratroopers>
+    
+    <rosen>
+	<rosen type="int">0</rosen>
+	<weight type="float">105000</weight>
+    </rosen>
+    
+    <switches>
+      <fuel type="int">0</fuel>
+      <gauge-light type="int">0</gauge-light>
+      <adf-1-selector type="double">0</adf-1-selector>
+      <adf-2-selector type="double">0</adf-2-selector>
+      <ushdb-sel-1 type="double">0</ushdb-sel-1>
+      <ushdb-sel-2 type="double">0</ushdb-sel-2>
+      <metar type="bool">0</metar>
+    </switches>
+    
+    <chokes>
+      <activ type="int">0</activ>
+    </chokes>
+    
+    <reverser type="bool">0</reverser>
+
+    <cargodoor>
+      <signal type="int">0</signal>
+    </cargodoor>
+    
+  </controls>
+    
+  <gear>
+    <gear>
+      <steering-norm type="float">0</steering-norm>
+      <position-norm type="float">1</position-norm>
+    </gear>
+  </gear>
+  <scenery><share-events type="bool">true</share-events></scenery>
+
+  <sim include="Systems/views.xml">
+
+    <description>Ilyushin Il-76MD</description>
+    <author>Wagner Herbert (FDM, animations, instrumentation updates), Baranger Emmanuel (3D/FDM)</author>
+    <aircraft-version>3.0.1</aircraft-version>
+    <status>beta</status>
+    <aero>IL-76MD-yasim</aero>
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 0 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+  
+    <fuel-fraction>0.6</fuel-fraction>
+    <signals><fdm-ready type="int">0</fdm-ready></signals>
+
+    <startup>
+      <splash-texture>Aircraft/IL-76MD/IL-76MD-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/IL-76MD/Models/IL-76MD.xml</path>
+      <livery archive="y">
+        <file type="string">default</file>
+      </livery>
+      <il76md>
+	<version type="string">3.0.1</version>
+	<scalpel type="string">off</scalpel>
+	<tents type="double">0</tents>
+      </il76md>
+      <hide-yoke type="bool">true</hide-yoke>
+    </model>
+
+    <sound>
+      <path>Aircraft/IL-76MD/Sounds/IL-76MD-sound.xml</path>
+    </sound>
+
+    <instrumentation>
+       <path>Aircraft/IL-76MD/Systems/instrumentation.xml</path>
+    </instrumentation>
+    
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+
+        <int type="int" n="1" alias="/controls/paratroopers/jump-signal">  0 </int>
+	<int type="int" n="2" alias="/controls/rosen/trigger/state">  0 </int>
+        <int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
+        <int type="int" n="4" alias="/controls/lighting/beacon-state/state"/>
+	<int type="int" n="5" alias="/controls/switches/gauge-light"/>
+	<int type="int" n="6" alias="/controls/rosen/rosen">  0 </int>
+	<int type="int" n="8" alias="/controls/lighting/nav-lights"/>
+	<int type="int" n="9" alias="/controls/lighting/landing-lights"/>
+	<int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
+	<int type="int" n="11" alias="/controls/switches/fuel">  0 </int>
+	<int type="int" n="12" alias="/controls/lighting/strobe-state/state"/>
+	<int type="int" n="13" alias="/controls/engines/engine[0]/starting">  0 </int>	
+	<int type="int" n="14" alias="/controls/engines/engine[1]/starting">  0 </int>	
+	<int type="int" n="15" alias="/controls/engines/engine[2]/starting">  0 </int>	
+	<int type="int" n="16" alias="/gear/gear[0]/wow">  1 </int>	
+	<int type="int" n="17" alias="/controls/engines/engine[3]/starting">  0 </int>
+	<int type="int" n="18" alias="/gear/gear[2]/wow">  1 </int>
+	<int type="int" n="19" alias="/sim/signals/fdm-ready" />
+	
+	
+        <float n="0" alias="/surface-positions/slat-pos-norm"/>
+        <float n="1" alias="/surface-positions/spoiler-pos-norm"/>
+        <float n="2" alias="/gear/gear[2]/rollspeed-ms" />
+        <float n="3" alias="/sim/weight[1]/weight-lb"/>        
+        <float n="4" alias="/sim/model/il76md/tents"/>
+        <float n="5" alias="/position/gear-agl-m"> 0 </float>                    <!-- altitude for MP shadow -->
+        <float n="6" alias="/engines/engine[0]/fan" />        
+	<float n="7"  alias="/sim/model/door-positions/cargo/position-norm"/>
+        <float n="8" alias="/engines/engine[1]/fan" />
+        <float n="9"  alias="/sim/model/door-positions/crewL/position-norm"/>
+        <float n="10" alias="/engines/engine[2]/fan" />
+        <float n="11"  alias="/sim/model/door-positions/crewR/position-norm"/>
+        <float n="12" alias="/engines/engine[3]/fan" />
+        <float n="13" alias="/velocities/groundspeed-kt"/>
+        <float n="14" alias="/controls/engines/engine[0]/reverserminus">  1.0 </float>
+  
+        <float n="18" alias="/controls/gear/runway"> 0 </float>
+	
+        <string  alias="/sim/multiplay/callsign"/>
+        <string n="1" type="string" alias="/sim/model/il76md/version"/>
+        <string n="2" type="string" alias="/sim/model/il76md/scalpel"/>
+        
+      </generic>
+    </multiplay>
+    
+     <!-- Flap settings -->
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.08</setting>
+      <setting>0.16</setting>
+      <setting>0.32</setting>
+      <setting>0.48</setting>
+      <setting>0.64</setting>
+      <setting>0.82</setting>
+      <setting>1.00</setting>
+    </flaps>
+    
+    <slats>
+	<setting>0.00</setting>
+	<setting>0.25</setting>
+	<setting>0.50</setting>
+	<setting>0.75</setting>
+	<setting>1.00</setting>
+    </slats>
+      
+      <spoilers>
+	<setting>0.00</setting>
+	<setting>0.25</setting>
+	<setting>0.50</setting>
+	<setting>0.75</setting>
+	<setting>1.00</setting>
+      </spoilers>
+
+    <help include="Systems/help.xml"/>
+
+    <menubar include="Dialogs/IL-76MD-menu.xml"/>
+
+  </sim>
+  
+  <!-- Engine indexes -->
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>      
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>      
+    </engine>
+    <engine n="2">
+      <engine-num type="int">2</engine-num>      
+    </engine>
+    <engine n="3">
+      <engine-num type="int">3</engine-num>      
+    </engine>
+  </engines>
+
+<!-- Fuel Tank indexes -->
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+      </tank>
+      <tank n="1">
+        <tank-num type="int">1</tank-num>
+      </tank>
+      <tank n="2">
+        <tank-num type="int">2</tank-num>
+      </tank>
+      <tank n="3">
+        <tank-num type="int">3</tank-num>
+      </tank>
+      <tank n="4">
+        <tank-num type="int">4</tank-num>
+      </tank>
+      <tank n="5">
+        <tank-num type="int">5</tank-num>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <autopilot>
+    <settings>
+      <target-agl-ft type="double">0</target-agl-ft>
+      <target-aoa-deg type="double">0</target-aoa-deg>
+      <target-speed-kt type="double">0</target-speed-kt>
+      <target-pitch-deg type="double">0</target-pitch-deg>
+      <target-altitude-ft type="double">0</target-altitude-ft>
+      <vertical-speed-fpm type="double">0</vertical-speed-fpm>
+      <true-heading-deg type="double">0</true-heading-deg>
+    </settings>
+    <internal>
+      <target-climb-rate-fps type="double">0</target-climb-rate-fps>
+      <target-roll-deg type="double">0</target-roll-deg>
+    </internal>
+  </autopilot>
+  
+ <instrumentation>
+
+<dme n="0">
+    <frequencies>
+       <source type="string">/instrumentation/dme[0]/frequencies/selected-mhz</source>
+    </frequencies>
+    <switch-position n="0" type="int">0</switch-position>
+    <switch-position n="1" type="int">0</switch-position>
+    <switch-position n="2" type="int">0</switch-position>
+    <switch-position n="3" type="int">0</switch-position>
+    <serviceable type="bool">true</serviceable>
+</dme>
+<dme n="1">
+    <frequencies>
+       <source type="string">/instrumentation/dme[1]/frequencies/selected-mhz</source>
+    </frequencies>
+    <switch-position n="0" type="int">0</switch-position>
+    <switch-position n="1" type="int">0</switch-position>
+    <switch-position n="2" type="int">0</switch-position>
+    <switch-position n="3" type="int">0</switch-position>
+    <serviceable type="bool">true</serviceable>
+</dme>
+    
+<inst-vertical-speed-indicator>
+        <serviceable type="bool">true</serviceable>
+</inst-vertical-speed-indicator>
+<altimeter>
+        <decision-height type="double">0</decision-height>
+	<setting-hapa type="double">0</setting-hapa>
+</altimeter>
+<airspeed-indicator>
+        <index-marker type="double">100</index-marker>
+</airspeed-indicator>
+    
+<drift type="double">0</drift>
+    
+<heading-indicator n="0">
+      <serviceable type="int">0</serviceable>
+</heading-indicator>
+    
+<adf n="0">
+  <mode>adf</mode>
+  <serviceable type="bool">false</serviceable>
+  <frequencies>
+    <selected-khz type="int">490</selected-khz>  <!-- NDB "DVI" (Donaueschingen) -->
+    <standby-khz type="int">401</standby-khz>    <!-- EDTM ancient military airbase -->
+  </frequencies>
+  <error-deg type="double">0</error-deg>
+  <power-btn type="bool">false</power-btn>
+  <operable type="bool">true</operable>
+  <volume type="double">0.10</volume>
+</adf>
+
+<adf n="1">  
+  <mode>adf</mode>  
+  <serviceable type="bool">false</serviceable>
+  <frequencies>
+    <selected-khz type="int">0</selected-khz>  <!--442 EDNY near the lake of constance -->
+    <standby-khz type="int">0</standby-khz>    <!-- 473 EDSN ancient military airbase -->
+  </frequencies>
+  <error-deg type="double">0</error-deg>
+  <power-btn type="bool">false</power-btn>
+  <operable type="bool">true</operable>
+  <volume type="double">0.10</volume>
+  <indicated-bearing-deg type="double">90</indicated-bearing-deg>
+</adf>
+    
+<nav n="0">
+  
+  <volume type="double">0.10</volume>
+  <radials>
+    <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>    
+  </radials>
+  <power-btn type="bool">false</power-btn>
+  <serviceable type="bool">false</serviceable>
+  <operable type="bool">false</operable>  
+</nav>
+
+<nav n="1">
+  
+  <volume type="double">0.10</volume>
+  <radials>
+    <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>
+  </radials>
+  <power-btn type="bool">false</power-btn>
+  <serviceable type="bool">false</serviceable>
+  <operable type="bool">false</operable>  
+</nav>
+
+<iku>  
+    <heading-deg-1 type="double">90</heading-deg-1>
+    <heading-deg-2 type="double">90</heading-deg-2>
+</iku>
+
+<transponder>  
+  <serviceable type="bool">false</serviceable>
+</transponder>
+
+<ushdb><compass type="double">0</compass></ushdb>
+<mapcase><page type="int">1</page></mapcase>
+
+<!-- B707 Stopwatch  -->
+<stopwatch>
+  <running type="bool">0</running>
+  <btn-mode type="bool">0</btn-mode>
+  <btn-reset type="bool">0</btn-reset>
+  <btn-start-stop type="bool">0</btn-start-stop>
+  <flight-time>
+    <start-time type="double">0</start-time>
+    <accu type="double">0</accu>
+    <total type="double">0</total>
+    <hours type="int">0</hours>
+    <minutes type="int">0</minutes>
+    <seconds type="int">0</seconds>
+  </flight-time>
+</stopwatch>
+
+</instrumentation>
+
+<input>
+  <keyboard include="Systems/IL-76MD-keyboard.xml"/>
+</input>
+
+  <nasal>    
+    <il76>
+      <file>Aircraft/IL-76MD/Nasal/liveries.nas</file>
+      <file>Aircraft/IL-76MD/Nasal/light.nas</file>
+      <file>Aircraft/IL-76MD/Nasal/autopilot.nas</file>
+      <file>Aircraft/IL-76MD/Nasal/IL76engines.nas</file>
+      <file>Aircraft/IL-76MD/Nasal/Electrical.nas</file>
+    </il76>
+    <instruments>
+      <file>Aircraft/IL-76MD/Nasal/setprop.nas</file>      
+    </instruments>
+    <para>
+      <file>Aircraft/IL-76MD/Nasal/paratroopers.nas</file>
+    </para>    
+    <help>
+      <file>Aircraft/IL-76MD/Nasal/km-5-1.nas</file>
+    </help>
+    <mapcase>
+      <file>Aircraft/IL-76MD/Nasal/mapcase.nas</file>
+    </mapcase>
+    <doors>
+      <file>Aircraft/IL-76MD/Nasal/doors.nas</file>
+    </doors>
+    <warning>
+      <file>Aircraft/IL-76MD/Nasal/IL-76MD-stall.nas</file>
+    </warning>
+  </nasal>
+
+</PropertyList>

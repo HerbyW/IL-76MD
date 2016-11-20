@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- some parts are from IL-76TD by SAXAR, most Intrior is new build by Herbert Wagner
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+
+  <path>interior-MDTD10.ac</path>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>intvitres</object-name>
+    <object-name>fenster-tuere-links</object-name>
+    <object-name>fenster-tuere-rechts</object-name>
+  </effect>
+  
+  
+  <animation>
+    <name>IntCargo</name>
+    <object-name>intcargo0</object-name>
+    <object-name>intcargoG1</object-name>
+    <object-name>intcargoG2</object-name>
+    <object-name>intcargoD1</object-name>
+    <object-name>intcargoD2</object-name>
+    <object-name>rampe</object-name>
+  </animation>
+
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntCargo</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.cargo.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intcargo0</object-name>
+    <object-name>rampe</object-name>
+    <property>sim/multiplay/generic/float[7]</property>
+    <factor> 29 </factor>
+    <center>
+      <x-m>  4.51221 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -5.75317 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>rampe</object-name>
+    <property>sim/multiplay/generic/float[7]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.4 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>rampe</object-name>
+    <property>sim/multiplay/generic/float[7]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 1 </ind><dep> 2.57 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>rampe</object-name>
+    <condition>
+      <property>sim/multiplay/generic/int[16]</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intcargoG1</object-name>
+    <property>sim/multiplay/generic/float[7]</property>
+    <factor> -110 </factor>
+    <axis>
+      <x1-m>  9.11554 </x1-m>
+      <y1-m> -1.91281 </y1-m>
+      <z1-m> -4.03825 </z1-m>
+      <x2-m> 13.08599 </x2-m>
+      <y2-m> -1.75849 </y2-m>
+      <z2-m> -2.98032 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intcargoD1</object-name>
+    <property>sim/multiplay/generic/float[7]</property>
+    <factor> -110 </factor>
+    <axis>
+      <x1-m> 13.08599 </x1-m>
+      <y1-m>  1.75849 </y1-m>
+      <z1-m> -2.98032 </z1-m>
+      <x2-m>  9.11554 </x2-m>
+      <y2-m>  1.91281 </y2-m>
+      <z2-m> -4.03825 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intcargoG2</object-name>
+    <property>sim/multiplay/generic/float[7]</property>
+    <factor> -110 </factor>
+    <axis>
+      <x1-m> 13.08599 </x1-m>
+      <y1-m> -1.75849 </y1-m>
+      <z1-m> -2.98032 </z1-m>
+      <x2-m> 16.26021 </x2-m>
+      <y2-m> -1.33948 </y2-m>
+      <z2-m> -2.13455 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intcargoD2</object-name>
+    <property>sim/multiplay/generic/float[7]</property>
+    <factor> -110 </factor>
+    <axis>
+      <x1-m> 16.26021 </x1-m>
+      <y1-m>  1.33948 </y1-m>
+      <z1-m> -2.13455 </z1-m>
+      <x2-m> 13.08599 </x2-m>
+      <y2-m>  1.75849 </y2-m>
+      <z2-m> -2.98032 </z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Porte -->
+  <animation>
+    <type>pick</type>
+    <object-name>tuere-links</object-name>
+    <object-name>fenster-tuere-links</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crewL.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>tuere-links</object-name>
+    <object-name>fenster-tuere-links</object-name>
+    <property>sim/multiplay/generic/float[9]</property>
+    <factor> -165 </factor>
+    <center>
+      <x-m> -15.63089 </x-m>
+      <y-m>  -2.30522 </y-m>
+      <z-m>  -3.77002 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>tuere-rechts</object-name>
+    <object-name>fenster-tuere-rechts</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crewR.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>tuere-rechts</object-name>
+    <object-name>fenster-tuere-rechts</object-name>
+    <property>sim/multiplay/generic/float[11]</property>    
+    <factor> 165 </factor>
+    <center>
+      <x-m> -15.63089 </x-m>
+      <y-m>   2.30522 </y-m>
+      <z-m>  -3.77002 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <!-- Seats-right -->
+  
+  <animation>
+    <type>pick</type>
+    <object-name>payloadsitze-r</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+              <command>property-toggle</command>
+              <property>sim/model/sitze-r</property>
+              <value type="bool">1</value>
+	      <value type="bool">0</value>
+            </binding> 
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>payloadsitze-r</object-name>
+    <property>sim/model/sitze-r</property>
+    <factor> 90</factor>
+    <axis>
+      <x1-m> -14.385 </x1-m>
+      <y1-m>  1.687 </y1-m>
+      <z1-m> -4.4123 </z1-m>
+      <x2-m> 2.861 </x2-m>
+      <y2-m>  1.687 </y2-m>
+      <z2-m> -4.412 </z2-m>
+    </axis>
+  </animation>
+  
+   <!-- Seats-left -->
+  
+  <animation>
+    <type>pick</type>
+    <object-name>payloadsitze-l</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+              <command>property-toggle</command>
+              <property>sim/model/sitze-l</property>
+              <value type="bool">1</value>
+	      <value type="bool">0</value>
+            </binding> 
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>payloadsitze-l</object-name>
+    <property>sim/model/sitze-l</property>
+    <factor> -90</factor>
+    <axis>
+      <x1-m> -14.385 </x1-m>
+      <y1-m>  -1.723 </y1-m>
+      <z1-m> -4.412 </z1-m>
+      <x2-m> 2.861 </x2-m>
+      <y2-m> -1.723 </y2-m>
+      <z2-m> -4.412 </z2-m>
+    </axis>
+  </animation>
+  
+</PropertyList>

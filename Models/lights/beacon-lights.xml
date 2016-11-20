@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<!--###################################################################################
+Lake of Constance Hangar :: M.Kraus
+Boeing 707 for Flightgear Septemper 2013
+This file is licenced under the terms of the GNU General Public Licence V2 or later
+###################################################################################
+modified by Herbert Wagner 2016 for IL-76MD 
+-->
+
+<PropertyList>
+  
+  <path>beacon-lights.ac</path>  
+  
+  <!-- No preview for fgrun-->
+  <animation>
+    <object-name>beacon-cargo-door</object-name> 
+    <object-name>beacon-top</object-name>
+    <object-name>beacon-top-base</object-name>
+    <object-name>beacon-ground</object-name>
+    <object-name>pos-light-back</object-name>
+    <object-name>BeaconVolume_1</object-name> 
+    <object-name>BeaconVolume_1.001</object-name> 
+    <object-name>BeaconVolume_1.002</object-name> 
+    <object-name>LightBeaconGlow</object-name> 
+    <object-name>LightBeaconGlow.001</object-name> 
+    <object-name>LightBeaconGlow.002</object-name> 
+    <nopreview/>
+  </animation>
+    
+    <!-- Special Shaders -->
+    
+    <animation>
+      <type>noshadow</type>      
+      <object-name>beacon-cargo-door</object-name> 
+    <object-name>beacon-top</object-name>
+    <object-name>beacon-top-base</object-name>
+    <object-name>beacon-ground</object-name>
+    <object-name>pos-light-back</object-name>
+    <object-name>BeaconVolume_1</object-name> 
+    <object-name>BeaconVolume_1.001</object-name> 
+    <object-name>BeaconVolume_1.002</object-name> 
+    <object-name>LightBeaconGlow</object-name> 
+    <object-name>LightBeaconGlow.001</object-name> 
+    <object-name>LightBeaconGlow.002</object-name> 
+    </animation>
+    
+<animation>
+  <type>material</type>
+  <object-name>beacon-cargo-door</object-name> 
+    <object-name>beacon-top</object-name>
+    <object-name>beacon-ground</object-name> 
+  <emission>
+    <red>1.0</red>
+    <green>0.20</green>
+    <blue>0.20</blue>
+    <factor-prop>sim/multiplay/generic/int[4]</factor-prop>
+  </emission>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>LightBeaconGlow</object-name> 
+    <object-name>LightBeaconGlow.001</object-name> 
+    <object-name>LightBeaconGlow.002</object-name>
+  <condition>
+    <and>
+    	<not><property>/sim/rendering/rembrandt/enabled</property></not>
+	    <property>sim/multiplay/generic/int[4]</property>
+    </and>
+  </condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>BeaconVolume_1</object-name> 
+    <object-name>BeaconVolume_1.001</object-name> 
+    <object-name>BeaconVolume_1.002</object-name>
+	<condition>
+		<and>
+		<property>/sim/rendering/rembrandt/enabled</property>
+	    <property>sim/multiplay/generic/int[4]</property>
+		</and>
+	</condition>
+</animation>
+
+		<!-- beacon red top -->
+	<animation>
+		<type>light</type>
+		<light-type>point</light-type>
+		<name>Beacon_top</name>
+		<object-name>BeaconVolume_1.001</object-name>
+		<position>
+			<x> -8.065</x>
+			<y>  0.0</y>
+			<z>  -0.07</z>
+		</position>
+		<ambient>
+			<r>0.99</r>
+			<g>0.0</g>
+			<b>0.0</b>
+			<a>1.0</a>
+		</ambient>
+		<diffuse>
+			<r>0.99</r>
+			<g>0.0</g>
+			<b>0.0</b>
+			<a>1.0</a>
+		</diffuse>
+		<specular>
+			<r>0.99</r>
+			<g>0.0</g>
+			<b>0.0</b>
+			<a>1.0</a>
+		</specular>
+		<attenuation>
+			<c>1.0</c>
+			<l>0.7</l>
+			<q>5</q>
+		</attenuation>
+		<near-m>0.01</near-m>
+		<far-m>10</far-m>
+	</animation>
+	
+	<!-- beacon red bottom -->
+	<animation>
+		<type>light</type>
+		<light-type>point</light-type>
+		<name>Beacon_bottom</name>
+		<object-name>BeaconVolume_1</object-name>
+		<position>
+			<x>-9.083</x>
+			<y> 0.0</y>
+			<z>-5.752</z>
+		</position>
+		<ambient>
+			<r>0.99</r>
+			<g>0.0</g>
+			<b>0.0</b>
+			<a>1.0</a>
+		</ambient>
+		<diffuse>
+			<r>0.99</r>
+			<g>0.0</g>
+			<b>0.0</b>
+			<a>1.0</a>
+		</diffuse>
+		<specular>
+			<r>0.99</r>
+			<g>0.0</g>
+			<b>0.0</b>
+			<a>1.0</a>
+		</specular>
+		<attenuation>
+			<c>1.0</c>
+			<l>0.7</l>
+			<q>1</q>
+		</attenuation>
+		<near-m>0.01</near-m>
+		<far-m>10</far-m>
+	</animation>
+	
+		<!-- beacon red bottom -->
+	<animation>
+		<type>light</type>
+		<light-type>point</light-type>
+		<name>Beacon_cargo</name>
+		<object-name>BeaconVolume_1.002</object-name>
+		<position>
+			<x>20.90</x>
+			<y> 0.0</y>
+			<z>-8.33</z>
+		</position>
+		<ambient>
+			<r>0.99</r>
+			<g>0.0</g>
+			<b>0.0</b>
+			<a>1.0</a>
+		</ambient>
+		<diffuse>
+			<r>0.99</r>
+			<g>0.0</g>
+			<b>0.0</b>
+			<a>1.0</a>
+		</diffuse>
+		<specular>
+			<r>0.99</r>
+			<g>0.0</g>
+			<b>0.0</b>
+			<a>1.0</a>
+		</specular>
+		<attenuation>
+			<c>1.0</c>
+			<l>0.07</l>
+			<q>1</q>
+		</attenuation>
+		<near-m>0.01</near-m>
+		<far-m>10</far-m>
+	</animation>
+
+
+
+</PropertyList>

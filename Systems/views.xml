@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <chase-distance-m type="double" archive="y"> -70 </chase-distance-m>
+
+  <view n="100">
+    <name>Co Pilote</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">   0.61156 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -1.89655 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -19.44196 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -5 </pitch-offset-deg>
+      <default-field-of-view-deg> 80 </default-field-of-view-deg>
+    </config>
+  </view>
+
+  <view n="101">
+    <name>Engineer</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">   0.81 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -1.95 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -17.71 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> 3 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 90 </default-field-of-view-deg>
+      <heading-offset-deg type="double">-173 </heading-offset-deg>
+    </config>
+  </view>
+  
+  <view n="102">
+    <name>Navigator Glass View</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">  0.0 </x-offset-m> <!--Right-->
+      <y-offset-m archive="y">  -4.50 </y-offset-m> <!--Up-->
+      <z-offset-m archive="y"> -20.92 </z-offset-m> <!--Back-->
+      <pitch-offset-deg> -18 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 105 </default-field-of-view-deg>
+    </config>
+  </view>
+  
+  <view n="103">
+    <name>Navigator View</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">  0.0 </x-offset-m> <!--Right-->
+      <y-offset-m archive="y">  -3.84 </y-offset-m> <!--Up-->
+      <z-offset-m archive="y"> -20.25 </z-offset-m> <!--Back-->
+      <pitch-offset-deg> -5 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 95 </default-field-of-view-deg>
+    </config>
+  </view>
+  
+  <view n="104">
+    <name>Cargo Ramp</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">   0.60 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -3.14 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> 4.46 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -15 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 115 </default-field-of-view-deg>
+      <heading-offset-deg type="double">188 </heading-offset-deg>
+    </config>
+  </view>  
+  
+  
+  <view n="105">
+    <name>Load Master</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">   -0.58 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -3.55 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -15.57 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -5 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 85 </default-field-of-view-deg>
+      <heading-offset-deg type="double">-90 </heading-offset-deg>
+    </config>
+  </view>
+  
+  <view n="106">
+    <name>Way to Navigator</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">   1.37 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -3.63 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -16.25 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -5 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 85 </default-field-of-view-deg>
+      <heading-offset-deg type="double">25 </heading-offset-deg>
+    </config>
+  </view>
+  
+  <view n="107">
+    <name>Bridge</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">   0.0 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -1.73 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -16.25 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -9 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 95 </default-field-of-view-deg>
+      <heading-offset-deg type="double">0 </heading-offset-deg>
+    </config>
+  </view>
+  
+  <view n="0">
+    <internal archive="y">true</internal>
+    <config>
+      <x-offset-m archive="y">  -0.61156 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -1.89655 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -19.44196 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -5 </pitch-offset-deg>
+      <default-field-of-view-deg> 80 </default-field-of-view-deg>
+    </config>
+  </view>
+
+  <view n="1">
+    <config>
+      <target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+  <view n="2">
+    <config>
+      <target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+  <view n="3">
+    <config>
+      <target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+  <view n="4">
+    <config>
+      <target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+  <view n="5">
+    <config>
+      <target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+  <view n="6">
+    <config>
+      <target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+</PropertyList>

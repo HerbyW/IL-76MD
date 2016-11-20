@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<!-- Ilyushin Il-76       : BARANGER Emmanuel (2016) / update to version MD by Herbert Wagner 10/2016
+
+     Sources              : https://en.wikipedia.org/wiki/Ilyushin_Il-76
+
+     Wingspan             :  50.50 m    (    165 ft  8 in )
+     Lenght               :  46.59 m    (    152 ft 10 in )
+     Height               :  14.76 m    (     48 ft 5 in  )
+     Empty weight         :  92500 kg   ( 203962 lb       )
+     Engines              : 4 x Aviadvigatel PS-90-76 turbofans (32000 lbf each )
+     Max speed            :    900 km/h (490 ) Mach 0.82 depending on altitude
+     
+     YASim solution results: Orig
+       Iterations: 1490
+ Drag Coefficient: 31.0667
+       Lift Ratio: 553.429
+       Cruise AoA: 0.898545
+   Tail Incidence: -1.32107
+Approach Elevator: -0.299533
+            CG: 5.245, 0.010, -1.521          orig
+            
+YASim solution results: HerbyW
+       Iterations: 1215
+ Drag Coefficient: 24.2235
+       Lift Ratio: 170.611
+       Cruise AoA: 1.43628
+   Tail Incidence: -2.37312
+Approach Elevator: -0.277629
+            CG: 5.205, 0.010, -1.556
+            
+            YASim solution results: speed +30
+       Iterations: 1176
+ Drag Coefficient: 21.7203
+       Lift Ratio: 190.207
+       Cruise AoA: 1.216
+   Tail Incidence: -2.00719
+Approach Elevator: -0.298373
+            CG: 5.205, 0.010, -1.556
+            
+            YASim solution results:
+       Iterations: 1108
+ Drag Coefficient: 22.2106
+       Lift Ratio: 169.587
+       Cruise AoA: 0.815191
+   Tail Incidence: -1.57191
+Approach Elevator: -0.33555
+            CG: 5.205, 0.010, -1.556
+            
+            YASim solution results: new fuselage elements camber 0.02
+       Iterations: 1208
+ Drag Coefficient: 20.0481
+       Lift Ratio: 207.347
+       Cruise AoA: 1.2069
+   Tail Incidence: -2.02059
+Approach Elevator: -0.31807
+            CG: 5.399, 0.047, -1.644
+            
+            YASim solution results: camber 0.05
+       Iterations: 1138
+ Drag Coefficient: 20.4983
+       Lift Ratio: 184.873
+       Cruise AoA: 0.807334
+   Tail Incidence: -1.58822
+Approach Elevator: -0.357786
+            CG: 5.399, 0.047, -1.644
+            
+            YASim solution results: camber 0.06
+       Iterations: 1115
+ Drag Coefficient: 20.6482
+       Lift Ratio: 178.28
+       Cruise AoA: 0.674526
+   Tail Incidence: -1.44449
+Approach Elevator: -0.371045
+            CG: 5.399, 0.047, -1.644
+            
+            YASim solution results: camber 0.07
+       Iterations: 1087
+ Drag Coefficient: 20.7982
+       Lift Ratio: 172.07
+       Cruise AoA: 0.54193
+   Tail Incidence: -1.301
+Approach Elevator: -0.384265
+            CG: 5.399, 0.047, -1.644
+            
+YASim solution results: camber 0.1
+       Iterations: 998
+ Drag Coefficient: 21.1748
+       Lift Ratio: 156.079
+       Cruise AoA: 0.144233
+   Tail Incidence: -0.870633
+Approach Elevator: -0.425335
+            CG: 5.399, 0.047, -1.644
+            
+            YASim solution results:
+       Iterations: 997
+ Drag Coefficient: 21.1748
+       Lift Ratio: 156.078
+       Cruise AoA: 0.144253
+   Tail Incidence: -0.870665
+Approach Elevator: -0.425295
+            CG: 5.399, 0.047, -1.644
+            
+            YASim solution results: flaps lift 1.3 < 1.4 drag 1.9
+       Iterations: 1105
+ Drag Coefficient: 20.82
+       Lift Ratio: 137.179
+       Cruise AoA: 0.451578
+   Tail Incidence: -1.35391
+Approach Elevator: -0.47121
+            CG: 5.399, 0.047, -1.644
+            
+            YASim solution results: flaps lift 1.5 drag 1.9
+       Iterations: 1191
+ Drag Coefficient: 20.4707
+       Lift Ratio: 122.828
+       Cruise AoA: 0.756452
+   Tail Incidence: -1.83402
+Approach Elevator: -0.516155
+            CG: 5.399, 0.047, -1.644
+    
+Specifications (Il-76TD-90)
+
+General characteristics
+
+    Crew: 5
+    Payload: 42 tonnes (Il-76M), 48 tonnes (Il-76MD), 60 tonnes (Il-76MD-90A) ()
+    Length: 46.59 m (152 ft 10 in)
+    Wingspan: 50.5 m (165 ft 8 in)
+    Height: 14.76 m (48 ft 5 in)
+    Wing area: 300.0 m² (3,229.2 ft²)
+    Empty weight: 92,500 kg (Il-76TD-90)[nb 1] (203,962 lb)
+    Max. takeoff weight: 195,000 kg (Il-76)[nb 2] (429,975 lb (Il-76TD-90))
+    Powerplant: 4 × Aviadvigatel PS-90-76 turbofans, 142 kN (32,000 lbf)  or 14,500 kgf[66] each
+
+Performance
+
+    Maximum speed: 900 km/h (490 kt, 560 mph) Mach 0.82 depending on altitude
+    Range: 5,000 km (2,700 nmi)   for (Il-76MD-90A/TD-90VD) with 52 tonne payload; 4,000 km (Il-76M/T); 4,400 km (Il-76MD/TD), 4,200 km (Il-76MF/TF)
+    Service ceiling: 13,000 m (42,700 ft)
+    Wing loading: 566.7 kg/m² (Il-76M/T)[nb 3] (116.05 lb/ft² (Il-76M/T), 129.72 lb/ft² (Il-76MD/TD))
+    Thrust/weight: (Il-76)[nb 4]
+    minimal landing run: 450 m with thrust reversal
+    
+    92,000 kg (Il-76MD/TD), 104,000 kg (Il-76MF/TF)
+for other models: 170,000 kg (Il-76M/T), 190,000 kg Il-76MD/TD), 210,000 kg (Il-76MF/TF)
+633.3 kg/m² (Il-76MD/TD)
+0.282 (Il-76M/T), 0.252 (Il-76MD/TD), 0.228 (Il-76MF/TF)
+
+Armament
+
+    Guns: 2× 23 mm cannon in radar-directed manned turret at base of tail
+    Bombs: Some military models have 2 hardpoints under each outer wing capable of supporting 500 kg bombs.
+
+    Il-76MD
+    Improved military transport version, (modifitseerovannyy Dahl'ny - modified, long-range).
+Il-76MD Skal'pel-MT
+    - Mobile Hospital
+Il-76M / Il-76MD
+    Built without military equipment but designated as Ms and MDs (Gordon - 'Falsies')
+Il-76MD-90
+    An Il-76MD with quieter and more economical Aviadvigatel PS-90 high-bypass turbofan engines.
+    Il-76MDM
+    modernized Il-76MD for the Russian Air Force.
+Il-76MD-90A
+    An updated version with a new glass cockpit, updated avionics,
+    new internal wing structure and Aviadvigatel PS-90 engines. It was also known as Il-476 while in development.
+    Il-76MD tanker
+    Iraqi Air Force tanker conversions.
+    
+    http://www.airvectors.net/avil76.html
+    
+    Il-76MD
+
+    Performance
+
+General Data
+
+Il-76MD military transport aircraftis based on the Il-76M serial productionmilitary transport aircraft.
+
+The aircraft is meant for parachute operations and landing of military personnel, military equipment,
+cargoes, fuel and containers. By reinforcing its main structural elements (airframe and landing gear),
+the maximum takeoff weight and commercial load have been increased.
+Show more
+
+    Top thrust (SI system, H=0)
+    4х12000kgf
+
+Another figure
+Main technical characteristics
+Dimensional characteristics 	
+Length, m 	46,6
+Height, m 	14,76
+Wingspan, m 	50,5
+Wing area, sq. m. 	300
+Fuselage diameter, m 	4,8
+Power plant parameters 	
+Number x engine type 	4 x turbojet engine
+Engine model 	D-30KP series 2
+Top thrust (SI system, H=0), kgf 	12 000
+Weight parameters 	
+Maximum takeoff weight, tons 	190        (210 t = 462970 lbs)
+Maximum payload, tons 	48
+Fuel tank capacity, l 	109 500
+Aircraft performance 	
+Cruising speed, km/h 	750–780
+Flight altitude, m 	9 100–12 100
+Flight range with payload of 40 tons, km 	4 200
+Takeoff distance, m 	1 700
+Landing distance, m 	930
+Number of seats 	
+Crew, persons 	7 (6)
+Passengers, persons 	single-deck version:
+126 paratroopers
+145 military personnel
+114 wounded
+Double-deck version:
+225 military personnel
+Freight compartment parameters 	
+Length x Width x Height, m 	24,54x3,45x3,4
+Volume, cubic meters 	321
+Specified life 	
+Calendar operating life, years 	45
+Number of flights 	8 000
+Number of flight hours, hr. 	12 000
+
+
+Il-76MD-90
+
+    Performance
+
+General Data
+
+Il-76MD-90 military transport aircraftis based on the Il-76MD series productionmilitary transport aircraftand is designed for landing and parachuting of military personnel, equipment and various cargos.
+
+The aircraft has more powerful and economic PS-90A-76 engines, which meet ICAO requirements for noise and harmful emissions. Installation of new engines allowed for increasing cost efficiency of the aircraft significantly, due to reduced average fuel consumption in cruise flight, increasingflying range and commercial load, and reducing direct operational costs.
+
+    Top thrust (SI system, H=0)
+    4х16000kgf
+
+Another figure
+Main technical characteristics
+Dimensional characteristics 	
+Length, m 	46,6
+Height, m 	14,76
+Wingspan, m 	50,5
+Wing area, sq. m. 	300
+Fuselage diameter, m 	4,8
+Power plant parameters 	
+Number x engine type 	4 x turbojet engine
+Engine 
+	PS-90A-76
+Top thrust (SI system, H=0), kgf 	16 000
+Weight parameters 	
+Maximum takeoff weight, tons 	195
+Maximum payload, tons 	50
+Fuel tank capacity, l 	109 500
+Aircraft performance 	
+Cruising speed, km/h 	750–800
+Flight altitude, m 	9 100–12 100
+Flight range with payload of 40 tons, km 	5 400
+Takeoff distance, m 	1 300
+Landing distance, m 	930
+Number of seats 	
+Crew, persons 	6
+Passengers, persons 	single-deck version:
+126 paratroopers
+145 military personnel
+114 wounded
+Double-deck version:
+225 military personnel
+Freight compartment parameters 	
+Length x Width x Height, m 	24,54x3,45x3,4
+Volume, cubic meters 	321
+Specified life 	
+Calendar operating life, years 	30
+Number of flights 	4 000
+Number of flight hours, hr. 	6 000
+
+
+Il-76MD-90A
+
+    Performance
+    Media
+    3D tour
+
+General Data
+
+Il-76MD-90A is created on the basis of mass production Il-76MD aircraftfor the purposes of further improvement of this type of aircraft and extension of its transportation capacity by way of modernizing the wingand installing more powerful, economical and quiet PS-90A-76engines, instead of D-30KP-2 engines.
+
+Il-76MD-90A is meant for parachuting and landing of military personnel, military equipment, cargoes, fuel and containers.
+
+Modified Il-76MD-90A aircraft complies with standards for noise level determined by requirements of Appendix 16 Chapter 4 of ICAO standards, and for emission of harmful substances into the atmosphere. All this, along with the opportunities for aircraft navigation by RNP-1 requirements allowed for expanding the flight geography of Il-76MD-90A both in local and international airlines.
+Show more
+
+    Top thrust (SI system, H=0)
+    4х16000kgf
+
+Another figure
+Main technical characteristics
+Dimensional characteristics 	
+Length, m 	46,6
+Height, m 	14,76
+Wingspan, m 	50,5
+Wing area, sq. m. 	300
+Fuselage diameter, m 	4,8
+Power plant parameters 	
+Number x engine type 	4 x turbojet engine
+Engine
+	PS-90A-76 ,142 kN (32,000 lbf)  or 14,500 kgf
+Top thrust (SI system, H=0), kgf 	16 000
+Weight parameters 	
+Maximum takeoff weight, tons 	210
+Maximum payload, tons 	52 (with extension to 60)
+Fuel tank capacity, l 	109 500
+
+Aircraft performance 	
+Cruising speed, km/h 	750–800
+Flight altitude, m 	9 100–12 100
+Flight range with payload of 52 tons, km 	5 000
+Takeoff distance, m 	1 540
+Landing distance, m 	1050
+Number of seats 	
+Crew, persons 	6
+Passengers, persons 	single-deck version:
+126 paratroopers
+145 military personnel
+114 wounded
+Double-deck version:
+225 military personnel
+Freight compartment parameters 	
+Length x Width x Height, m 	24,54x3,45x3,4
+Volume, cubic meters 	321
+Specified life	
+Calendar operating life, years	30
+Number of flights	8 000
+Number of flight hours, hr.	10 000
+    
+            
+-->
+<airplane mass="203962" version="YASIM_VERSION_CURRENT">
+
+  <approach speed="110" aoa="2" fuel="0.2">
+    <control-setting axis="/controls/engines/engine[0]/throttle-lever" value="0.5"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle-lever" value="0.5"/>
+    <control-setting axis="/controls/engines/engine[2]/throttle-lever" value="0.5"/>
+    <control-setting axis="/controls/engines/engine[3]/throttle-lever" value="0.5"/>
+    <control-setting axis="/controls/flight/flaps" value="1.0"/>
+  <control-setting axis="/controls/flight/slats" value="1.0"/>
+  <control-setting axis="/controls/flight/spoilers" value="0.0"/>
+  <control-setting axis="/controls/gear/gear-down" value="1"/>
+  </approach>
+
+  <cruise speed="470" alt="36000" fuel="0.8">
+    <control-setting axis="/controls/engines/engine[0]/throttle-lever" value="0.85"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle-lever" value="0.85"/>
+    <control-setting axis="/controls/engines/engine[2]/throttle-lever" value="0.85"/>
+    <control-setting axis="/controls/engines/engine[3]/throttle-lever" value="0.85"/>
+     <control-setting axis="/controls/flight/flaps" value="0.0"/>
+  <control-setting axis="/controls/flight/slats" value="0.0"/>
+  <control-setting axis="/controls/flight/spoilers" value="0.0"/>
+  <control-setting axis="/controls/gear/gear-down" value="0"/>
+  </cruise>
+
+  <cockpit x="24.41012" y="0.41799" z="-0.67554"/>
+
+  <!-- Fuselage -->
+  <fuselage ax=" 23.326" ay=" 0.000" az="-3.506" bx=" 19.383" by=" 0.000" bz="-3.506" width="4.724" taper="0.1" midpoint="1.0"/>
+  <fuselage ax=" 19.383" ay=" 0.000" az="-3.506	" bx=" -5.563" by=" 0.000" bz="-3.506" width="4.70" taper="1.0" midpoint="1.0"/>
+  <fuselage ax=" -5.563" ay=" 0.000" az="-3.506" bx="-19.762" by=" 0.000" bz="-0.259" width="4.70" taper="0.1" midpoint="0.0"/>
+  
+  <!-- Tail -->
+  <fuselage ax=" -13.93"  ay=" 0.0" az="6.833" bx=" -22.93" by=" 0.0" bz="6.713" width="0.99" taper="1.0" midpoint="1.0"/>
+  <!-- GearBox -->
+  <fuselage ax=" 7.984"  ay=" 2.427" az="-4.865" bx=" -4.016" by=" 2.427" bz="-4.865" width="1.8" taper="1.0" midpoint="1.0"/>
+  <fuselage ax=" 7.984"  ay="-2.427" az="-4.865" bx=" -4.016" by="-2.427" bz="-4.865" width="1.8" taper="1.0" midpoint="1.0"/>
+  
+  <!-- Engine exterior left -->
+  <fuselage ax=" 9.653"  ay=" 10.784" az="-3.425" bx=" 3.653" by=" 10.784" bz="-3.425" width="1.7" taper="1.0" midpoint="1.0"/>
+  <!-- Engine interior left -->
+  <fuselage ax="11.683"  ay="  6.473" az="-3.193" bx=" 5.683" by="  6.473" bz="-3.193" width="1.7" taper="1.0" midpoint="1.0"/>
+  <!-- Engine interior right -->
+  <fuselage ax="11.683"  ay="  6.473" az="-3.193" bx=" 5.683" by="  6.473" bz="-3.193" width="1.7" taper="1.0" midpoint="1.0"/>
+  <!-- Engine exterior right -->
+  <fuselage ax=" 9.653"  ay="-10.784" az="-3.425" bx=" 3.653" by="-10.784" bz="-3.425" width="1.7" taper="1.0" midpoint="1.0"/>
+  
+  <!-- Wing -->
+  <wing x="5.906" y="1.797" z="-0.821"
+	chord="10.65"
+	length="25.39"
+	taper="0.26"
+	sweep="21"
+	dihedral="-3"
+	camber="0.1">
+    <stall aoa="10.0" width="3" peak="1.3"/>
+    <flap0 start="0.0" end="0.75" lift="1.5" drag="1.9"/>
+    <flap1 start="0.75" end="0.95" lift="1.3" drag="1.3"/>
+    <slat start="0.1" end="0.95" aoa="4" drag="1.4"/>
+    <spoiler start="0.2" end="0.75" lift="0.8" drag="4"/>
+    
+    <control-input axis="/controls/flight/flaps" control="FLAP0"/>
+    <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+    <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+    <control-input axis="/controls/flight/slats" control="SLAT"/>
+    <control-input axis="/controls/flight/spoilers" control="SPOILER"/>
+    
+    <control-output control="FLAP0" side="left" prop="/surface-positions/flap-pos-norm"/>
+    <control-output control="FLAP0" side="right" prop="/surface-positions/flap-pos-norm"/>
+    <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+    <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+    <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>    
+    <control-output control="SLAT" prop="/surface-positions/slat-pos-norm"/>    
+    <control-output control="SPOILER" prop="/surface-positions/spoiler-pos-norm"/>
+    
+    <control-speed control="FLAP0" transition-time="45"/>
+    <control-speed control="FLAP1" transition-time="1.0"/>
+    <control-speed control="SLAT" transition-time="10"/>
+    <control-speed control="SPOILER" transition-time="1.0"/>
+    </wing>
+
+   <!-- Elevator -->
+  <hstab x="-18.103" y="0" z="7.016"
+         chord="5.551"
+         length="9.6"
+         sweep="25"
+         taper="0.4">
+         <stall aoa="20" width="3" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.6" drag="1.1"/>
+         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+         <control-speed control="FLAP0" transition-time="15.0"/>
+  </hstab>
+
+  <!-- Ruder -->
+  <vstab x="-14.890" y="0" z="-0.773"
+         chord="8.2"
+         length="8.5"
+         sweep="30"
+         taper="0.7">
+         <stall aoa="18" width="3" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.6" drag="1.6"/>
+         <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+         <control-speed control="FLAP0" transition-time="2.0"/>
+  </vstab>
+
+  <!-- Engines   source            : https://en.wikipedia.org/wiki/Aviadvigatel_PS-90
+
+                 name              : Aviadvigatel PS-90
+                 type              : Twin-spool high bypass turbofan with a single-stage fan
+                 power cruise      : 38400 lbf
+                 weight            : 2950 kg ( 6500 lb )
+  -->
+  <!-- Engine left exterior -->
+  <jet x="7.381" y="10.756" z="-3.415"
+       mass="6500"
+       thrust="38400"
+       n1-idle="26"
+       n1-max="99.2"
+       n2-idle="60"
+       n2-max="102.5"
+       egt="840"
+       tsfc="0.5"
+       reverse="0.33">
+       <actionpt x="3.518" y="10.754" z="-3.408"/>
+       <control-input axis="/controls/engines/engine[0]/throttle-lever" control="THROTTLE" src0="0" src1="1" dst0="0.05" dst1="1"/>
+       <control-input axis="/controls/engines/engine[0]/reverser" control="REVERSE_THRUST"/>
+       <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"/>
+       <control-speed control="REVERSE_THRUST" transition-time="1.5"/>
+  </jet>
+
+  <!-- Engine left interior -->
+  <jet x="9.431" y="6.400" z="-3.158"
+       mass="6500"
+       thrust="38400"
+       n1-idle="26"
+       n1-max="99.2"
+       n2-idle="60"
+       n2-max="102.5"
+       egt="840"
+       tsfc="0.5"
+       reverse="0.33">
+       <actionpt x="5.568" y="6.396" z="-3.150"/>
+       <control-input axis="/controls/engines/engine[1]/throttle-lever" control="THROTTLE" src0="0" src1="1" dst0="0.05" dst1="1"/>
+       <control-input axis="/controls/engines/engine[1]/reverser" control="REVERSE_THRUST"/>
+       <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"/>
+       <control-speed control="REVERSE_THRUST" transition-time="1.5"/>
+  </jet>
+
+  <!-- Engine right interior-->
+  <jet x="9.431" y="-6.400" z="-3.158"
+       mass="6500"
+       thrust="38400"
+       n1-idle="26"
+       n1-max="99.2"
+       n2-idle="60"
+       n2-max="102.5"
+       egt="840"
+       tsfc="0.5"
+       reverse="0.33">
+       <actionpt x="5.568" y="-6.396" z="-3.150"/>
+       <control-input axis="/controls/engines/engine[2]/throttle-lever" control="THROTTLE" src0="0" src1="1" dst0="0.05" dst1="1"/>
+       <control-input axis="/controls/engines/engine[2]/reverser" control="REVERSE_THRUST"/>
+       <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[2]"/>
+       <control-speed control="REVERSE_THRUST" transition-time="1.5"/>
+  </jet>
+
+  <!-- Engine right exterior-->
+  <jet x="7.381" y="-10.756" z="-3.415"
+       mass="6500"
+       thrust="38400"
+       n1-idle="26"
+       n1-max="99.2"
+       n2-idle="60"
+       n2-max="102.5"
+       egt="840"
+       tsfc="0.5"
+       reverse="0.33">
+       <actionpt x="3.518" y="-10.754" z="-3.408"/>
+       <control-input axis="/controls/engines/engine[3]/throttle-lever" control="THROTTLE" src0="0" src1="1" dst0="0.05" dst1="1"/>
+       <control-input axis="/controls/engines/engine[3]/reverser" control="REVERSE_THRUST"/>
+       <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[3]"/>
+       <control-speed control="REVERSE_THRUST" transition-time="1.5"/>
+  </jet>
+
+  <!-- Noze wheel -->
+  <gear x="14.70944" y="0" z="-7.22"
+        retract-time="7"
+        compression="0.3"
+        spring="1"
+        damp="1.0"
+        sfric="1.6"
+        dfric="0.7">
+        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" dst0="-0.8052" src1="1.0" dst1="0.8052" square="true"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        
+        <control-speed control="EXTEND" transition-time="7"/>
+        <control-speed control="BRAKE" transition-time="0.7"/>
+        <control-speed control="STEER" transition-time="2.5"/>
+       
+        <control-output control="STEER" prop="/gear/gear[0]/steering-norm"/>
+        <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+  </gear>
+
+  <!-- Left wheel 1 -->
+  <gear x="3.18118" y="3.19368" z="-7.45"
+        retract-time="7"
+        compression="0.8"
+        spring="1.2"
+        damp="1.0"
+        sfric="1.6"
+        dfric="0.8">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        
+        <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+        <control-speed control="BRAKE" transition-time="0.7"/>
+        <control-speed control="EXTEND" transition-time="7"/>
+  </gear>
+
+  <!-- Left wheel 2 -->
+  <gear x="0.67003" y="3.19368" z="-7.45"
+        retract-time="7"
+        compression="0.8"
+        spring="1.2"
+        damp="1.0"
+        sfric="1.6"
+        dfric="0.8">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        
+        <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+        <control-speed control="BRAKE" transition-time="0.7"/>
+        <control-speed control="EXTEND" transition-time="7"/>
+  </gear>
+
+  <!-- Right wheel 1 -->
+  <gear x="3.18118" y="-3.19368" z="-7.45"
+        retract-time="7"
+        compression="0.8"
+        spring="1.2"
+        damp="1.0"
+        sfric="1.6"
+        dfric="0.8">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        
+        <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+        <control-speed control="BRAKE" transition-time="0.7"/>
+        <control-speed control="EXTEND" transition-time="7"/>
+  </gear>
+
+  <!-- Right wheel 2 -->
+  <gear x="0.67003" y="-3.19368" z="-7.45"
+        retract-time="7"
+        compression="0.8"
+        spring="1.2"
+        damp="1.0"
+        sfric="1.6"
+        dfric="0.8">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        
+        <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+        <control-speed control="BRAKE" transition-time="0.7"/>
+        <control-speed control="EXTEND" transition-time="7"/>
+  </gear>
+
+  <!-- Total : 187044 lbs in 6 tanks - 31174 each -->
+  <tank x="5" y="  4.361" z="-1.261" capacity="31714"/>
+  <tank x="4" y="  7.361" z="-1.261" capacity="31714"/>
+  <tank x="3" y=" 10.361" z="-1.261" capacity="31714"/>
+  <tank x="3" y="-10.361" z="-1.261" capacity="31174"/>
+  <tank x="4" y=" -7.361" z="-1.261" capacity="31174"/>
+  <tank x="5" y=" -4.361" z="-1.261" capacity="31174"/>
+  
+  <!-- Mass distribution -->
+  <ballast x="26" y="0" z="-4" mass="40850"/>
+  
+  <weight x="20.0" y="0" z="1.67" mass-prop="/sim/weight[0]/weight-lb"/>
+  <weight x="4.9" y="0" z="-3" mass-prop="/sim/weight[1]/weight-lb"/>
+  <weight x="4.9" y="0" z="-3" mass-prop="/sim/weight[2]/weight-lb"/>
+
+</airplane>

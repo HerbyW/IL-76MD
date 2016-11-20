@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--from Tu-154b
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+<PropertyList>
+
+  <path>switch.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>switch</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>switch</object-name>
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>switch</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+            <command>property-toggle</command>
+            <property>controls/engines/engine[2]/ignition</property>
+        </binding>
+        <binding>
+        <condition>
+            <not>
+                <property>controls/engines/engine[2]/ignition</property>
+            </not>
+        </condition>
+            <command>property-assign</command>
+            <property>controls/engines/engine[2]/cutoff</property>
+        <value>1</value>
+        </binding>      
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>switch</object-name>
+    <property>controls/engines/engine[2]/ignition</property>
+    <factor> -50 </factor>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+</PropertyList>

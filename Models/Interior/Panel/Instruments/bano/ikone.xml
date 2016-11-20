@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+<PropertyList>
+ <path>ikone.ac</path>
+<!--External panel lighting-->
+<animation>
+  <type>material</type>  
+  <object-name>base_4</object-name>  
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <offset>0.1</offset>
+      <red>   0.11 </red>
+      <green> 0.11 </green>
+      <blue>  0.11 </blue>
+    </emission>
+</animation>
+
+<animation>
+ <type>select</type>	  
+  <condition>
+    <property>sim/initialized</property>
+  </condition>
+</animation>
+
+</PropertyList>
+

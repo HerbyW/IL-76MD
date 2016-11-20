@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--model from IL-76TD
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+
+  <path>treppe-rechts.ac</path>  
+  
+  <animation>
+    <name>treppe-rechts</name>
+    <object-name>treppe-oben</object-name>
+    <object-name>treppe-unten</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>treppe-rechts</object-name>
+    <property>sim/multiplay/generic/float[11]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.4 </ind><dep> 0.3 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>treppe-rechts</object-name>
+    <property>sim/multiplay/generic/float[11]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.4 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.55 </ind><dep> 25 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>treppe-rechts</object-name>
+    <property>sim/multiplay/generic/float[11]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.4 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.55 </ind><dep> -0.8 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>treppe-rechts</object-name>
+    <property>sim/multiplay/generic/float[11]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.4 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.55 </ind><dep> -2.25 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>treppe-rechts</object-name>
+    <property>sim/multiplay/generic/float[11]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.55 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.85 </ind><dep> -1.1 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>treppe-unten</object-name>
+    <property>sim/multiplay/generic/float[11]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.85 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -1.1 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>treppe-rechts</object-name>
+    <condition>
+      <property>sim/multiplay/generic/int[16]</property>
+    </condition>
+  </animation>
+
+</PropertyList>

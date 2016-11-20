@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+  
+  <path>bigtent.ac</path>
+  
+  <animation>
+    <name>tent02</name>    
+  </animation>
+  
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>10000</max-m>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <name>tent02</name>  
+    <condition>
+      <or>
+	<equals>
+	  <property>sim/multiplay/generic/string[2]</property>
+	  <value>on</value>
+	</equals>
+	<greater-than>
+	  <property>sim/multiplay/generic/float[4]</property>
+	  <value>0</value>
+	</greater-than>
+      </or>
+    </condition>
+  </animation>
+  
+  <animation>
+    <enable-hot type="bool">false</enable-hot>
+  </animation>
+  
+  <animation>
+    <type>scale</type>
+    <name>tent02</name>
+    <property>sim/multiplay/generic/float[4]</property>
+    <factor>1</factor>
+    <x-max>1</x-max>
+    <y-max>1</y-max>
+    <z-max>1</z-max>
+    <x-factor>0.01</x-factor>
+    <y-factor>0.01</y-factor>
+    <z-factor>0.01</z-factor>
+  </animation>
+  
+  </PropertyList>
+  

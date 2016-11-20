@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+
+  <fx>
+    
+    <!-- Engines 1 - 4 starting up-->
+    <crank>
+      <name>engstart1</name>
+      <path>Aircraft/IL-76MD/Sounds/start-n.wav</path>
+      <mode>once</mode>
+       <condition>       
+          <property>sim/multiplay/generic/int[13]</property>    
+        </condition>      
+      <volume>
+        <offset>-0.1</offset>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </crank>
+    
+    <crank>
+      <name>engstart2</name>
+      <path>Aircraft/IL-76MD/Sounds/start-n.wav</path>
+      <mode>once</mode>
+       <condition>       
+          <property>sim/multiplay/generic/int[14]</property>    
+        </condition>      
+      <volume>
+        <offset>-0.1</offset>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>1</delay-sec>
+    </crank>
+    
+    <crank>
+      <name>engstart3</name>
+      <path>Aircraft/IL-76MD/Sounds/start-n.wav</path>
+      <mode>once</mode>
+       <condition>       
+          <property>sim/multiplay/generic/int[15]</property>    
+        </condition>      
+      <volume>
+        <offset>-0.1</offset>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>1</delay-sec>
+    </crank>
+    
+    <crank>
+      <name>engstart4</name>
+      <path>Aircraft/IL-76MD/Sounds/start-n.wav</path>
+      <mode>once</mode>
+       <condition>       
+          <property>sim/multiplay/generic/int[17]</property>    
+        </condition>     
+      <volume>
+        <offset>-0.1</offset>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>1</delay-sec>
+    </crank>
+    
+    <!-- Engines running -->
+    
+ <engine>
+   <name>engine1</name>
+      <mode>looped</mode>
+      <path>Aircraft/IL-76MD/Sounds/jet.wav</path>      
+        <condition>       
+          <property>sim/multiplay/generic/int[13]</property>    
+        </condition>  
+      <volume>
+        <property>sim/multiplay/generic/float[6]</property>
+        <factor>0.007</factor>
+        <min>0.06</min>
+        <max>0.70</max>        
+      </volume>
+      <pitch>
+        <property>sim/multiplay/generic/float[6]</property>
+        <factor>0.005</factor>
+        <min>0.0</min>
+        <max>0.5</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+      <delay-sec>17</delay-sec>
+ </engine>
+ 
+ <engine>
+   <name>engine2</name>
+      <mode>looped</mode>
+      <path>Aircraft/IL-76MD/Sounds/jet.wav</path>      
+        <condition>       
+          <property>sim/multiplay/generic/int[14]</property>    
+        </condition>  
+      <volume>
+        <property>sim/multiplay/generic/float[8]</property>
+        <factor>0.007</factor>
+        <min>0.06</min>
+        <max>0.70</max>         
+      </volume>
+      <pitch>
+        <property>sim/multiplay/generic/float[8]</property>
+        <factor>0.005</factor>
+        <min>0.0</min>
+        <max>0.5</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+      <delay-sec>17</delay-sec>
+ </engine>
+ 
+ <engine>
+   <name>engine3</name>
+      <mode>looped</mode>
+      <path>Aircraft/IL-76MD/Sounds/jet.wav</path>      
+        <condition>       
+          <property>sim/multiplay/generic/int[15]</property>    
+        </condition> 
+      <volume>
+        <property>sim/multiplay/generic/float[10]</property>
+        <factor>0.007</factor>
+        <min>0.06</min>
+        <max>0.70</max>        
+      </volume>
+      <pitch>
+        <property>sim/multiplay/generic/float[10]</property>
+        <factor>0.005</factor>
+        <min>0.0</min>
+        <max>0.5</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+      <delay-sec>17</delay-sec>
+ </engine>
+ 
+ <engine>
+   <name>engine4</name>
+      <mode>looped</mode>
+      <path>Aircraft/IL-76MD/Sounds/jet.wav</path>      
+        <condition>       
+          <property>sim/multiplay/generic/int[17]</property>    
+        </condition>  
+      <volume>
+        <property>sim/multiplay/generic/float[12]</property>
+        <factor>0.007</factor>
+        <min>0.06</min>
+        <max>0.70</max>         
+      </volume>
+      <pitch>
+        <property>sim/multiplay/generic/float[12]</property>
+        <factor>0.005</factor>
+        <min>0.0</min>
+        <max>0.5</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+      <delay-sec>17</delay-sec>
+ </engine>
+  
+  <!-- Rumble -->
+    <rumble>
+      <name>rumble1</name>
+      <mode>looped</mode>
+      <path>Aircraft/IL-76MD/Sounds/24roll.wav</path>
+      <condition>
+          <property>sim/multiplay/generic/int[16]</property>
+      </condition>
+      <volume>
+        <property>sim/multiplay/generic/float[2]</property>        
+        <type>log</type>
+		    <factor>0.23</factor>
+		    <min>0.0</min>
+		    <max>0.8</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </rumble>
+
+    <rumble>
+      <name>rumble2</name>
+      <mode>looped</mode>
+      <path>Aircraft/IL-76MD/Sounds/24roll.wav</path>
+      <condition>         
+          <property>sim/multiplay/generic/int[18]</property>          
+      </condition>
+      <volume>
+        <property>sim/multiplay/generic/float[2]</property>        
+        <type>log</type>
+		    <factor>0.25</factor>
+		    <min>0.0</min>
+		    <max>0.8</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </rumble>
+
+<!-- Gear -->
+
+    <gear>
+      <name>gear</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/IL-76MD/Sounds/gear.wav</path>
+      <property>gear/gear[0]/position-norm</property>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </gear>
+
+    <gear>
+     <name>gear-lock</name>
+     <path>Aircraft/IL-76MD/Sounds/gear-lck.wav</path>
+     <condition>
+       <greater-than>
+         <property>gear/gear[0]/position-norm</property>
+         <value>0.96</value>
+       </greater-than>
+     </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </gear>
+
+<!-- Squeal -->
+    <squeal>
+		  <name>squeal1</name>
+		  <mode>once</mode>
+		  <path>Aircraft/IL-76MD/Sounds/squeal.wav</path>
+		  <condition>        
+		    <property>sim/multiplay/generic/int[16]</property>                 
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[19]</property>
+		    <factor>0.15</factor>
+		  </volume>
+		  <reference-dist>1000</reference-dist>
+		  <max-dist>5000</max-dist>
+		</squeal>
+		
+		<squeal>
+		  <name>squeal2</name>
+		  <mode>once</mode>
+		  <path>Aircraft/IL-76MD/Sounds/squeal.wav</path>
+		  <condition>        
+		    <property>sim/multiplay/generic/int[18]</property>          
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[19]</property>
+		    <factor>0.15</factor>
+		  </volume>
+		  <reference-dist>1000</reference-dist>
+		  <max-dist>5000</max-dist>
+		</squeal>
+
+<!-- Flaps -->
+    <flap>
+      <name>flaps</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/IL-76MD/Sounds/flaps.wav</path>
+      <property>surface-positions/flap-pos-norm</property>
+      <volume>
+        <factor>0.4</factor>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </flap>
+
+<!-- Spoilers -->
+    <spoiler>
+      <name>spoilers</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/IL-76MD/Sounds/flaps.wav</path>
+      <property>sim/multiplay/generic/float[1]</property>
+      <volume>
+        <factor>0.4</factor>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </spoiler>
+
+    <!-- Slats -->
+    <slats>
+      <name>slats</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/IL-76MD/Sounds/flaps.wav</path>
+      <property>sim/multiplay/generic/float[0]</property>
+      <volume>
+        <factor>0.4</factor>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </slats>
+    
+    <!-- Doors -->
+		
+		<door>
+		  <name>Cargo door</name>
+		  <path>Aircraft/IL-76MD/Sounds/door_closed.wav</path>
+		  <condition>
+		    <equals>
+		      <property>sim/multiplay/generic/float[7]</property>
+		      <value>0.0</value>
+		    </equals>
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[19]</property>
+		    <factor>0.35</factor>
+		  </volume>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		</door>
+		
+		<door>
+		  <name>Cargo doorT</name>
+		  <mode>in-transit</mode>
+		  <path>Aircraft/IL-76MD/Sounds/door_close.wav</path>
+		  <condition>
+		    <and>
+		      <greater-than>
+			<property>sim/multiplay/generic/float[7]</property>
+			<value>0.01</value>
+		      </greater-than>
+		      <less-than>
+			<property>sim/multiplay/generic/float[7]</property>
+			<value>0.99</value>
+		      </less-than>
+		    </and>
+		  </condition>
+		  <volume>
+		    <factor>0.12</factor>
+		  </volume>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		</door>
+		
+		<door>
+		  <name>Passenger doorL</name>
+		  <path>Aircraft/IL-76MD/Sounds/door_closed.wav</path>
+		  <condition>
+		    <equals>
+		      <property>sim/multiplay/generic/float[9]</property>
+		      <value>0.0</value>
+		    </equals>
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[19]</property>
+		    <factor>0.35</factor>
+		  </volume>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		</door>
+		
+		<door>
+		  <name>Passenger doorLT</name>
+		  <mode>in-transit</mode>
+		  <path>Aircraft/IL-76MD/Sounds/door_close.wav</path>
+		  <condition>
+		    <and>
+		      <greater-than>
+			<property>sim/multiplay/generic/float[9]</property>
+			<value>0.01</value>
+		      </greater-than>
+		      <less-than>
+			<property>sim/multiplay/generic/float[9]</property>
+			<value>0.99</value>
+		      </less-than>
+		    </and>
+		  </condition>
+		  <volume>
+		    <factor>0.11</factor>
+		  </volume>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		</door>
+		
+		<door>
+		  <name>Passenger doorR</name>
+		  <path>Aircraft/IL-76MD/Sounds/door_closed.wav</path>
+		  <condition>
+		    <equals>
+		      <property>sim/multiplay/generic/float[11]</property>
+		      <value>0.0</value>
+		    </equals>
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[19]</property>
+		    <factor>0.35</factor>
+		  </volume>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		</door>
+		
+		<door>
+		  <name>Passenger doorRT</name>
+		  <mode>in-transit</mode>
+		  <path>Aircraft/IL-76MD/Sounds/door_close.wav</path>
+		  <condition>
+		    <and>
+		      <greater-than>
+			<property>sim/multiplay/generic/float[11]</property>
+			<value>0.01</value>
+		      </greater-than>
+		      <less-than>
+			<property>sim/multiplay/generic/float[11]</property>
+			<value>0.99</value>
+		      </less-than>
+		    </and>
+		  </condition>
+		  <volume>
+		    <factor>0.11</factor>
+		  </volume>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		</door>
+
+  </fx>
+
+</PropertyList>

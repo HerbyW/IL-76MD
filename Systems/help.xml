@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+
+  <title>Ilyushin Il-76MD</title>
+
+      <key>
+	<name>s</name>
+        <desc>Autostart</desc>
+      </key>
+      <key>
+	<name>g/G</name>
+        <desc>Gear up/down</desc>
+      </key>
+      <key>
+	<name>B</name>
+        <desc>Parking Brake</desc>
+      </key>
+      <key>
+	<name>[/]</name>
+        <desc>Flaps up/down</desc>
+      </key>
+      <key>
+	<name>d/f</name>
+	<desc>retract/extend slats</desc>
+      </key>
+      <key>
+	<name>j/k</name>
+	<desc>decrease/increase spoilers</desc>
+      </key>      
+      <key>
+	<name>Delete</name>
+	<desc>Reverser on/off</desc>
+      </key>
+      <key>
+	<name>e</name>
+	<desc>Open/Close Cargo Door</desc>
+      </key>
+      <key>
+        <name>=</name>
+        <desc>Parachutist</desc>
+      </key>
+      <key>
+	<name>&lt;</name>
+	<desc>Change Pilot Engineer View</desc>
+      </key>
+      <key>
+	<name>y</name>
+	<desc>Change Pilot Ramp View</desc>
+      </key>
+  <text>
+Wellcome to version 3.0.1 of IL-76MD
+
+- Check cargo and/or payload: press y to switch to the ramp control and open the red box, for loading paratroopers.
+  They need open back door and both side doors to jump out, then use the switch on the panel to give the signal :)
+- many systems as in the AN-12BK, AN-22A or Tu-160-Blackjack, refer to them for more help
+- extra animations for Livery Scalpel (shut down engines)
+
+Il-76MD Skal'pel MT - Mobile Hospital
+Il-76MD Built without military equipment
+
+The aircraft is meant for parachute operations and landing of military personnel, military equipment,
+cargoes, fuel and containers. By reinforcing its main structural elements (airframe and landing gear),
+the maximum takeoff weight and commercial load have been increased.
+
+Main technical characteristics
+
+Dimensional characteristics
+Length, m 46,6
+Height, m 14,76
+Wingspan, m 50,5
+Wing area, sq. m. 300
+Wing loading: 129.72 lb/sqft
+Fuselage diameter, m 4,8
+
+Power plant parameters
+Number x engine type 4 x turbojet engine
+Engine model D-30KP series 2, 12 000 kgf each or: Aviadvigatel PS-90-76 turbofans, 142 kN (32,000 lbf)  or 14,500 kgf each
+
+Weight parameters 
+Empty weight: 92,500 kg
+Max. takeoff weight: 195,000 kg
+Maximum takeoff weight, tons 190 (210 t = 462970 lbs)
+Maximum payload, tons 48 (- 60)
+Fuel tank capacity, l 109 500
+
+Aircraft performance 
+Maximum speed: 900 km/h (490 kt, 560 mph) Mach 0.82 depending on altitude
+Cruising speed, km/h 750 - 780
+Service ceiling: 13,000 m (42,700 ft)
+Flight altitude, m 9 100 - 12 100
+Flight range with payload of 40 tons, 4 400 km
+Takeoff distance, m 1 700
+Landing distance, m 930
+minimal landing run: 450 m with thrust reversal
+
+Number of seats
+Crew, persons 7 (6)
+Passengers, persons single-deck version:
+126 paratroopers
+145 military personnel
+114 wounded
+
+Double-deck version:
+225 military personnel
+
+Freight compartment parameters
+Length x Width x Height, m 24,54x3,45x3,4
+Volume, cubic meters 321
+
+Specified life
+Calendar operating life, years 45
+Number of flights 8 000
+Number of flight hours, hr. 12 000
+
+Have fun and get the latest version at:
+https://github.com/HerbyW?tab=repositories
+</text>
+</PropertyList>

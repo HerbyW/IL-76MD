@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+  
+  <key n="100">
+    <name>d</name>
+    <desc>Retract Slats</desc>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/flight/slats</property>
+      <step type="double">-0.25</step>
+    </binding>
+  </key>
+  
+  <key n="102">
+    <name>f</name>
+    <desc>Extend Slats</desc>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/flight/slats</property>
+      <step type="double">0.25</step>
+    </binding>
+  </key>
+  
+  <key n="115">
+    <name>s</name>
+    <desc>Autostart</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>/sim/model/autostart</property>
+      <value>true</value>
+    </binding>
+  </key>
+  
+  <key n="60">
+    <name> > </name>
+    <desc>Change Pilot Engineer View</desc>
+    <binding>
+      <command>property-cycle</command>
+      <property>/sim/current-view/view-number</property>  
+      <value>0</value>
+      <value>9</value>
+    </binding>
+  </key>
+  
+  <key n="61"> 
+    <name>=</name>
+    <desc>Paratroopers Jump signal</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>/controls/paratroopers/jump-signal</property>
+      <value>true</value>
+    </binding>
+  </key>
+  
+  <key n="121">
+    <name>y</name>
+    <desc>Change Pilot Ramp View</desc>
+    <binding>
+      <command>property-cycle</command>
+      <property>/sim/current-view/view-number</property>  
+      <value>0</value>
+      <value>12</value>
+    </binding>
+  </key>
+  
+  <key n="127">
+    <name>Delete</name>
+    <desc>Toggle Reversers</desc>	
+    <binding>
+      <command>property-toggle</command>
+      <property>/controls/reverser</property>
+    </binding>
+  </key>
+  
+  <key n="101">
+    <name>e</name>
+    <desc>Cargo Door</desc>
+    <binding>
+      <command>nasal</command>
+      <script>doors.cargo.toggle();</script>
+    </binding>   
+  </key>
+  
+  </PropertyList>
+  

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList include="IL-76MD-base.xml">
+
+<sim>
+  
+  <description>Ilyushin Il-76MD (YASim)</description>
+  <author>Wagner Herbert (FDM, animations, instrumentation updates), Baranger Emmanuel (3D/FDM)</author>
+  <flight-model>yasim</flight-model>
+  <aero>IL-76MD-yasim</aero>
+  
+  <rating>
+    <FDM type="int">     3 </FDM>
+    <systems type="int"> 1 </systems>
+    <cockpit type="int"> 0 </cockpit>
+    <model type="int">   4 </model>
+  </rating>
+  
+  <weight n="0">
+    <name>Crew</name>
+    <weight-lb type="double">600</weight-lb>
+    <max-lb type="double">1800</max-lb>
+    <min-lb type="double">600</min-lb>
+  </weight>
+  
+  <weight n="1">
+    <name>Cargo</name>
+    <weight-lb type="double">0.0</weight-lb>
+    <max-lb type="double">120000</max-lb>
+    <min-lb type="double">0.0</min-lb>
+  </weight>
+  <weight n="2">
+    <name>Parachuters a 120 lb</name>
+    <weight-lb type="double">0.0</weight-lb>
+    <max-lb type="double">15120.0</max-lb>
+    <min-lb type="double">0.0</min-lb>
+  </weight>
+  
+  <systems>
+    <autopilot>
+      <path>Aircraft/IL-76MD/Systems/IL-76MD-autopilot.xml</path>
+    </autopilot>      
+  </systems> 
+  
+  <import>
+      <path>Huds/Sets/controls.xml</path>
+      <x-offset>-100</x-offset>
+      <y-offset>70</y-offset>
+    </import> 
+  
+  </sim>
+
+</PropertyList>

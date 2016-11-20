@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    #############################################################################
+    #    (C) 2008 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+<!-- Light switches block -AN-12
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>bano5.ac</path>
+<!--External panel lighting-->
+<animation>
+  <type>material</type>
+  <object-name>handle_1</object-name>
+  <object-name>handle_2</object-name>
+  <object-name>handle_3</object-name>
+  <object-name>handle_4</object-name>
+  <object-name>handle_5</object-name>
+  <object-name>base_1</object-name>
+  <object-name>base_2</object-name>
+  <object-name>base_3</object-name>
+  <object-name>base_4</object-name>  
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <offset>0.1</offset>
+      <red>   0.11 </red>
+      <green> 0.11 </green>
+      <blue>  0.11 </blue>
+    </emission>
+</animation>
+
+<!--
+<animation>
+  <type>rotate</type>
+  <object-name>handle_1</object-name>
+  <property>controls/electric/battery-switch</property>  
+  <interpolation>
+    <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
+    <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+-->
+<animation>
+  <type>rotate</type>
+  <object-name>handle_2</object-name>
+  <property>sim/multiplay/generic/int[8]</property>   
+  <interpolation>
+    <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
+    <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>rotate</type>
+  <object-name>handle_3</object-name>
+  <property>controls/switches/gauge-light</property>  
+  <interpolation>
+    <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
+    <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>rotate</type>
+  <object-name>handle_4</object-name>
+  <property>controls/lighting/beacon</property>  
+  <interpolation>
+    <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
+    <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>rotate</type>
+  <object-name>handle_5</object-name>
+  <property>controls/lighting/strobe</property>  
+  <interpolation>
+    <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
+    <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!--Control  not used -->
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_1</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_2</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_3</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("sim/multiplay/generic/int[8]", 1.0, 0.1 );        
+      </script>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_4</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("sim/multiplay/generic/int[8]", 0.0, 0.1 );        
+      </script>
+    </binding>
+  </action>
+</animation>
+
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_5</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    
+     
+     <binding>
+        <command>nasal</command>
+          <script>
+             interpolate("controls/switches/gauge-light", 1.0, 0.1 );
+          </script>
+     </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_6</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    
+     
+     <binding>
+        <command>nasal</command>
+          <script>
+             interpolate("controls/switches/gauge-light", 0.0, 0.1 );
+          </script>
+     </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_7</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    
+     
+     <binding>
+        <command>nasal</command>
+          <script>
+             interpolate("controls/lighting/beacon", 1.0, 0.1 );
+          </script>
+     </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_8</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    
+     
+     <binding>
+        <command>nasal</command>
+          <script>
+             interpolate("controls/lighting/beacon", 0.0, 0.1 );
+          </script>
+     </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_9</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    
+     
+     <binding>
+        <command>nasal</command>
+          <script>
+             interpolate("controls/lighting/strobe", 1.0, 0.1 );
+          </script>
+     </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_10</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    
+     
+     <binding>
+        <command>nasal</command>
+          <script>
+             interpolate("controls/lighting/strobe", 0.0, 0.1 );
+          </script>
+     </binding>
+  </action>
+</animation>
+
+
+
+
+</PropertyList>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+<!-- Red lamp
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>red_lamp.ac</path>
+<!--External panel lighting-->
+<animation>
+  <type>material</type>
+  <object-name>_c_1</object-name>
+  <object-name>_c_2</object-name>
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+</animation>
+<!--Brightness-->
+<animation>
+  <type>material</type>
+  <object-name>_d_2</object-name>
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+</animation>
+
+<!--Set-->
+<animation>
+  <type>select</type>
+  <object-name>_d_2</object-name>
+  <condition>
+    <equals>
+     <property>instrumentation/nav[1]/in-range</property>    
+     <value>0</value>
+    </equals>
+  </condition>
+</animation>
+
+
+
+</PropertyList>

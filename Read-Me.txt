@@ -1,0 +1,35 @@
+IL-76
+Baranger Emmanuel
+July, 01, 2016
+
+----------------------
+IL-76MD for Flightgear
+
+Copyright (C) Herbert Wagner Nov2016
+
+https://github.com/HerbyW?tab=repositories
+
+The external flightgear hangar for signiture aircrafts and vehicles
+with state of art multiplayer functions,full rembrandt support,
+no errors and a lot of fun for you!
+
+Any problems you may tell me, they will get fixed in no time.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Additional works by:
+
+Eagle   - some Liveries 11/2016
+
+See txt-files in /sounds for some sound files
+
+Testing and technical help from:
+
+Members in Mumble (3-D-m, D-07007, D-Sven)
+
+Some Instruments are from: Tu-154b, Il-76D, most are from AN-12BK, AN-22A and other aircrafts from my Hangar
+
+Many files for light and smoke are derivated from 707 by Lake of Constance Hangar :: M.Kraus
+
+Each xml-file holds own copyright notices.
+
+Most content is GPL some not.

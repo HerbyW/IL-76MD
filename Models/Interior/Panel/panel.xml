@@ -1,0 +1,2639 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+
+  
+  <path>panel-IL76-07-neu.ac</path>
+
+  <!-- YOKES -->
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/yokes/yokes.xml</path>
+  </model> 
+  
+        <!-- Ramp Control Panel (red box at ramp)-->
+    
+    <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ramppanel/ramppanel.xml</path>
+    <offsets>
+      <x-m>  25.4 </x-m>
+      <y-m> 1.87</y-m>
+      <z-m> -1.35 </z-m>
+      <heading-deg>85.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+
+  
+  <!-- Warning Indicator: fuel-low and over-speed,over-loading, Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning88.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.5435 </y-m>
+      <z-m>  0.18 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning26.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.526 </y-m>
+      <z-m>  0.174 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning31.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.483 </y-m>
+      <z-m>  0.174 </z-m>
+    </offsets>
+  </model>  
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning85.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.44 </y-m>
+      <z-m>  0.174 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning86.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m>  0.174 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning34.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.35 </y-m>
+      <z-m>  0.18 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning87.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m>  0.197 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning16.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.526 </y-m>
+      <z-m>  0.197 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning17.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.483 </y-m>
+      <z-m>  0.197 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning25.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.44 </y-m>
+      <z-m>  0.197 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/volume/volume.xml</path>
+    <offsets>
+      <x-m>  0.0015 </x-m>
+      <y-m> -0.875 </y-m>
+      <z-m>  -0.155 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- AI, FDI Flight Director Indicator -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m> -0.532 </y-m>
+      <z-m>  0.092 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> 0.001 </x-m>
+      <y-m> 0.532 </y-m>
+      <z-m> 0.092 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- UAP-12, AOA indicator --> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uap-12/uap-12.xml</path>
+    <offsets>
+      <x-m> 0.002 </x-m>
+      <y-m> -0.395 </y-m>
+      <z-m> -0.085 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- AI2, Artificial Horizont -->
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m>  0.84 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+
+    <!-- IKU-1 Heading Indicator VOR/ADF -->
+    
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/iku-1/iku-1.xml</path>
+    <offsets>
+      <x-m> 0.002 </x-m>
+      <y-m> -0.40 </y-m>
+      <z-m> 0.018 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- EUP Turn Coordinator -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.532 </y-m>
+      <z-m>  -0.165 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.532 </y-m>
+      <z-m> -0.165 </z-m>
+    </offsets>
+  </model>
+
+    <!-- TNV-15, OUtside Temperatur Indicator -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.805 </y-m>
+      <z-m>  0.11 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.81 </y-m>
+      <z-m>  0.103 </z-m>
+    </offsets>
+  </model>
+    
+  <!-- PNP, HSI Horizontal Situation Indicator from TU154b-->
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/pnp/pnp.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.532 </y-m>
+      <z-m>  -0.047 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/pnp/pnp.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.532 </y-m>
+      <z-m>  -0.047 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI, Indicated Airspeed Indicator, for use with the Autothrottle in kt-->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.646 </y-m>
+      <z-m>  0.115 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.646 </y-m>
+      <z-m> 0.115 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ASI, Indicated Airspeed Indicator, for use with the Autothrottle in km/h -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/asi-ru/asi-ru.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.737 </y-m>
+      <z-m>  0.082 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/asi-ru/asi-ru.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m>  0.734 </y-m>
+      <z-m>  0.082 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Mach Indicator -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/m_ind/m_ind.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.825 </y-m>
+      <z-m>  0.035 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+     --> 
+
+  <!-- ALT, Barometric Altimeter IN Hg/mm in meter and feet-->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uvid-15/uvid-15-m.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.646 </y-m>
+      <z-m> -0.062 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uvid-15/uvid-15-ft.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.646 </y-m>
+      <z-m> -0.161 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uvid-15/uvid-15-m.xml</path>
+    <offsets>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.646 </y-m>
+      <z-m>-0.062 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uvid-15/uvid-15-ft.xml</path>
+    <offsets>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.646 </y-m>
+      <z-m>-0.161 </z-m>
+    </offsets>
+  </model>
+
+    <!-- UVO, Altimeter Electric -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uvo/uvo.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.737 </y-m>
+      <z-m>  -0.12 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uvo/uvo.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.737 </y-m>
+      <z-m>  -0.12 </z-m>
+    </offsets>
+  </model>
+ 
+  
+  <!-- VAR-30, Rate and Climb Indicator -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/var/var-30.xml</path>
+    <offsets>
+      <x-m> -0.00  </x-m>
+      <y-m> -0.40  </y-m>
+      <z-m>  0.109 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/var/var-30.xml</path>
+    <offsets>
+      <x-m> -0.00  </x-m>
+      <y-m>  0.822  </y-m>
+      <z-m>  0.026 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VAR-75, Vertical Velocity Indicator -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/var/var-75.xml</path>
+    <offsets>
+      <x-m> -0.0   </x-m>
+      <y-m> -0.737 </y-m>
+      <z-m> -0.017 </z-m>
+    </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/var/var-75.xml</path>
+    <offsets>
+      <x-m> -0.0   </x-m>
+      <y-m>  0.737 </y-m>
+      <z-m> -0.017 </z-m>
+    </offsets>
+  </model>
+    
+  
+
+  <!-- DME40, VOR-DME and DME distance information in mi, kt and min -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/DME40/dme40.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.156 </y-m>
+      <z-m>  0.096 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/DME40/dme40-2.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.156 </y-m>
+      <z-m> 0.096 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Gear Indicator -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/gear-warning/ind_14.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m>  0.086 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Spoiler Indicator -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/warning/warning40.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m>  0.125 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Flaps Indicator for Landing and Starting -->  
+ 
+  <model>
+    <name>flaps_ind</name>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/flaps_ind/flaps_ind.xml</path>    
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.049 </y-m>
+      <z-m>  0.096 </z-m>      
+      <heading-deg>90.0</heading-deg>
+    </offsets>    
+  </model>
+  
+  <!-- Desition Hight Indicator -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/rv-5m/rv-5m.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.30 </y-m>
+      <z-m> 0.018 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Air- and Groundspeed Indicator in km/h -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/speed_ind/speed_ind.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.646 </y-m>
+      <z-m>  0.030 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/speed_ind/speed_ind.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m>  0.646 </y-m>
+      <z-m>  0.030 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- Clock -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/achs-2/achs-2.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.30 </y-m>
+      <z-m>  0.109 </z-m>
+    </offsets>
+  </model>
+  
+    <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/achs-2/timeset.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.30 </y-m>
+      <z-m>  0.109 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RPM, 1-Engine N2 RPM indicators, 2-Power to propeller -->
+  
+  <model>      
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/rpm/rpm1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.208 </y-m>
+      <z-m> -0.006 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets> 
+   </model>
+ 
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.126 </y-m>
+      <z-m> -0.006 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/rpm/rpm3.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.044 </y-m>
+      <z-m> -0.006 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/rpm/rpm4.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.038 </y-m>
+      <z-m> -0.006 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Fuel Control: Knob (activates the fuel system)
+                     Total Fuel Sum below 10 t for all tanks combined
+                     Total Fuel in t and in percent for all tanks combined
+                     Tank 1+2, Tank 3+4 Fuel Flow and Sum in t -->
+ 
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel_knob.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.194 </y-m>
+      <z-m> -0.182 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/fuel-lamp-green.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m> -0.23 </y-m>
+      <z-m> -0.192 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel_sum.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.126 </y-m>
+      <z-m> -0.17 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+    
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.042 </y-m>
+      <z-m> -0.17 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel1_R.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.042 </y-m>
+      <z-m> -0.17 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel1_R1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.126 </y-m>
+      <z-m> -0.17 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+    <!-- Engine Starter Panel Switches and Lamps -->
+ 
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/lamp-engine0.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m> -0.208 </y-m>
+      <z-m> -0.112 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/lamp-engine-green1.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m> -0.208 </y-m>
+      <z-m> -0.062 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model> 
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/lamp-engine1.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m> -0.118 </y-m>
+      <z-m> -0.112 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/lamp-engine-green2.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m> -0.118 </y-m>
+      <z-m> -0.062 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/lamp-engine2.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m> -0.029 </y-m>
+      <z-m> -0.112 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/lamp-engine-green3.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m> -0.029 </y-m>
+      <z-m> -0.062 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/lamp-engine3.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m>  0.060 </y-m>
+      <z-m> -0.112 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/lamp-engine-green4.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m>  0.060 </y-m>
+      <z-m> -0.062 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/switch/engine0.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.208 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/switch/engine1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.118 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/switch/engine2.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.029 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/switch/engine3.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.060 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+
+  <!-- UIZ, Fuel and Oil Pressure, Oil Temp (calculated, not too realistic) -->
+  
+  <model>
+    <name>uiz-1</name>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uiz/uiz-1.xml</path>    
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.253 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>     
+    </offsets>
+  </model>
+  
+  <model>
+    <name>uiz-1</name>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uiz/uiz-2.xml</path>    
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.163 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>     
+    </offsets>
+  </model>
+  
+  <model>
+    <name>uiz-1</name>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uiz/uiz-3.xml</path>    
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.0735 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>     
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uiz/uiz-4.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.015 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
+
+   <!--Variometer, For Cabine and Outside pressure control--> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uvpd/uvpd.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.825 </y-m>
+      <z-m> -0.05  </z-m>
+      <heading-deg>0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uvpd/uvpd.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m>  0.825 </y-m>
+      <z-m> -0.055  </z-m>
+      <heading-deg>0</heading-deg>
+    </offsets>
+  </model>
+  
+       <!-- Trim Neutral Placecards -->
+      
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/trim-neutral/ind_8.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.895 </y-m>
+      <z-m> -0.046 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/trim-neutral/ind_8.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.895 </y-m>
+      <z-m> -0.046 </z-m>
+    </offsets>
+  </model>
+ 
+
+  <!--Autopilot
+		Lake of Constance Hangar :: M.Kraus
+		Boeing 707 for Flightgear Septemper 2013
+		This file is licenced under the terms of the GNU General Public Licence V2 or later
+		###################################################################################
+		completly simplified by HerbyW Jan 2014 
+-->
+  
+ <model>
+  <name>Autopilot Helper</name>
+  <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ap/ap-fg.xml</path>
+  <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m> -0.286 </y-m>
+      <z-m>  0.210 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Set Hight</name>
+  <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/alt-set/alt-set.xml</path>
+  <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m> -0.283 </y-m>
+      <z-m>  0.180 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Set Pitch</name>
+  <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/alt-set/pitch-set.xml</path>
+  <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m> -0.30 </y-m>
+      <z-m>  0.250 </z-m>
+  </offsets>
+ </model>
+    
+   <!--Throttle, Propeller-Pitch, Mixture Control Panel -->
+ 
+ <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/throttlebox/throttlebox.xml</path>
+    <offsets>
+      <x-m> 0</x-m>
+      <y-m> 0.20 </y-m>
+      <z-m> 0 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/switch/reverser.xml</path>
+    <offsets>
+      <x-m> 0.078</x-m>
+      <y-m> -0.24 </y-m>
+      <z-m> -0.297 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-47</pitch-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/red-lamp-reverser.xml</path>
+    <offsets>
+      <x-m> 0.035</x-m>
+      <y-m> -0.24 </y-m>
+      <z-m> -0.29 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-43</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!--USH, USHDB ADF and VOR Navigation Compasses : Navigator View-->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ushdb/ushdb.xml</path>
+    <offsets>
+      <x-m>  2.09 </x-m>
+      <y-m>  -1.275 </y-m>
+      <z-m> 0.233 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ushdb/ushdb_selector.xml</path>
+    <offsets>
+      <x-m>  2.09 </x-m>
+      <y-m>  -1.275 </y-m>
+      <z-m> 0.08 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf1.xml</path>
+    <offsets>
+      <x-m>  2.04 </x-m>
+      <y-m>  -1.291 </y-m>
+      <z-m> 0.13 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf2.xml</path>
+    <offsets>
+      <x-m>  2.04 </x-m>
+      <y-m>  -1.291 </y-m>
+      <z-m> 0.06 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/red-lamp-nav1.xml</path>
+    <offsets>
+      <x-m>  2.14 </x-m>
+      <y-m>  -1.291 </y-m>
+      <z-m> 0.13 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/red-lamp-nav2.xml</path>
+    <offsets>
+      <x-m>  2.14 </x-m>
+      <y-m>  -1.291 </y-m>
+      <z-m> 0.06 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <text>
+    <name>NAV_ADF</name>
+    <type type="string">literal</type>
+    
+    <text type="string">
+      1 NAV/VOR 2
+      
+      
+      
+      
+      1 ADF/ARK 2</text>
+    
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.010</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.11</max-height>
+    <max-width>0.10</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  2.105 </x-m>
+      <y-m>  -1.275 </y-m>
+      <z-m> 0.08 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+      </offsets>
+  </text>
+  
+  <animation>
+    <type>material</type>    
+    <object-name>NAV_ADF</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ush/ush.xml</path>
+    <offsets>
+      <x-m>  1.89 </x-m>
+      <y-m>  -1.275 </y-m>
+      <z-m> 0.233 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+ 
+  <!--engineur panel: Skawk Transponder Control Module
+                      KM-5 magnetic variation module,
+                      PU-11 TKS compass system, the lateral gyro control panel
+                      Kurs-MP 1+2 nav radios, left knop controls the bearing, right knop the frequency,
+                               only the left Kurs-MP 1 is used for ILS-->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/skawk/skawk.xml</path>
+    <offsets>
+      <x-m>  3.16 </x-m>
+      <y-m>  1.050 </y-m>
+      <z-m>  0.540 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/skawk-lamp-green.xml</path>
+    <offsets>
+      <x-m>  3.177 </x-m>
+      <y-m>  1.088 </y-m>
+      <z-m>  0.549 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/km-5/km-5-1.xml</path>
+    <offsets>
+      <x-m>  3.16 </x-m>
+      <y-m>  0.85  </y-m>
+      <z-m>  0.530 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/kurs-mp/kurs-mp-1.xml</path>
+    <offsets>
+      <x-m>  3.16 </x-m>
+      <y-m>  1.00 </y-m>
+      <z-m>  0.40 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/kurs-mp/kurs-mp-2.xml</path>
+    <offsets>
+      <x-m>  3.16 </x-m>
+      <y-m>  0.80 </y-m>
+      <z-m>  0.40 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/radio/radio1.xml</path>
+    <offsets>
+      <x-m>  3.16 </x-m>
+      <y-m>  1.0 </y-m>
+      <z-m>  0.2935 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/dme/dme1.xml</path>
+    <offsets>
+      <x-m>  3.16 </x-m>
+      <y-m>  0.8 </y-m>
+      <z-m> 0.2935 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+      
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/radio/radio2.xml</path>
+    <offsets>
+      <x-m>  3.16 </x-m>
+      <y-m>  1.0 </y-m>
+      <z-m>  0.215 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/dme/dme2.xml</path>
+    <offsets>
+      <x-m>  3.16 </x-m>
+      <y-m>  0.8 </y-m>
+      <z-m> 0.215 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ark-15/ark-15-1.xml</path>
+    <offsets>
+      <x-m>  3.16 </x-m>
+      <y-m>  0.6 </y-m>
+      <z-m> 0.397 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf1.xml</path>
+    <offsets>
+      <x-m>  3.18 </x-m>
+      <y-m>  0.6 </y-m>
+      <z-m> 0.40 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ark-15/ark-15-2.xml</path>
+    <offsets>
+      <x-m>  3.16 </x-m>
+      <y-m>  0.6 </y-m>
+      <z-m> 0.247 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf2.xml</path>
+    <offsets>
+      <x-m>  3.18 </x-m>
+      <y-m>  0.6 </y-m>
+      <z-m> 0.265 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model> 
+  
+ 
+ <!-- Engineer Panel   RPM, 1-Engine N2 RPM indicators, -->
+  
+  <model>      
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/rpm/rpm4.xml</path>
+    <offsets>
+      <x-m>  2.90 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.227 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets> 
+   </model>
+ 
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/rpm/rpm3.xml</path>
+    <offsets>
+      <x-m>  2.80 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.227 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m>  2.70 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.227 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/rpm/rpm1.xml</path>
+    <offsets>
+      <x-m>  2.60 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.227 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+    
+  
+ 
+   <!-- Fuel Control Ingineer Panel: Knob, activating the fuel system 
+                     Total Fuel Sum below 10 t for all tanks combined
+                     Total Fuel in t and in percent for all tanks combined
+                     Tank 1-4, Fuel Flow and Sum in t -->
+ 
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel_knob.xml</path>
+    <offsets>
+      <x-m>  3.05 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.0 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/fuel-lamp-green.xml</path>
+    <offsets>
+      <x-m>  3.0 </x-m>
+      <y-m>  1.295 </y-m>
+      <z-m> 0.046 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/fuel1-green.xml</path>
+    <offsets>
+      <x-m>  3.02 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> 0.046 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/fuel2-green.xml</path>
+    <offsets>
+      <x-m>  3.04 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> 0.046 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/fuel3-green.xml</path>
+    <offsets>
+      <x-m>  3.06 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> 0.046 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/fuel4-green.xml</path>
+    <offsets>
+      <x-m>  3.08 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> 0.046 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/fuel5-green.xml</path>
+    <offsets>
+      <x-m>  3.10 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> 0.046 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel_sum.xml</path>
+    <offsets>
+      <x-m>  3.1 </x-m>
+      <y-m> 1.275 </y-m>
+      <z-m> 0.143 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+    
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel1.xml</path>
+    <offsets>
+      <x-m>  3.0 </x-m>
+      <y-m> 1.275 </y-m>
+      <z-m> 0.143 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel3_R1.xml</path>
+    <offsets>
+      <x-m>  2.90 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.143 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel3_R.xml</path>
+    <offsets>
+      <x-m>  2.80 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.143 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel2_R1.xml</path>
+    <offsets>
+      <x-m>  2.70 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.143 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/fuel/fuel2_R.xml</path>
+    <offsets>
+      <x-m>  2.60 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.143 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  
+
+ <!-- Pressuremeters 4-2 and 8-2  -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/pres4_2/pres42_1.xml</path>
+    <offsets>
+      <x-m>  2.60 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.065 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/pres4_2/pres42_3.xml</path>
+    <offsets>
+      <x-m>  2.700 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.065 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+   
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/pres4_2/pres42_3.xml</path>
+    <offsets>
+      <x-m>  2.800 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.065 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/pres4_2/pres42_4.xml</path>
+    <offsets>
+      <x-m>  2.900 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> 0.065 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+
+  
+  <!-- UT7A, Exhaust gas temperature indicator with Fuel-To-Air-Ratio (calculated, not too realistic) -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ut/ut7a-1.xml</path>
+    <offsets>
+      <x-m>  2.5700 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.002 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ut/ut7a-3.xml</path>
+    <offsets>
+      <x-m>  2.670 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.002 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ut/ut7a-3.xml</path>
+    <offsets>
+      <x-m>  2.770 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.002 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/ut/ut7a-4.xml</path>
+    <offsets>
+      <x-m>  2.870 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.002 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+ 
+ <!-- UIZ, Fuel and Oil Pressure, Oil Temp (calculated, not too realistic) -->
+  
+  <model>
+    <name>uiz-1</name>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uiz/uiz-4.xml</path>    
+    <offsets>
+      <x-m>  2.92 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.045 </z-m>
+      <heading-deg>270.0</heading-deg>     
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uiz/uiz-3.xml</path>
+    <offsets>
+      <x-m>  2.82 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.045 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uiz/uiz-2.xml</path>
+    <offsets>
+      <x-m>  2.72 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.045 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/uiz/uiz-1.xml</path>
+    <offsets>
+      <x-m>  2.62 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.045 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Engineer Panel Lamps --> 
+  
+   <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/press4-green.xml</path>
+    <offsets>
+      <x-m>  2.905 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.0 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/press4-red.xml</path>
+    <offsets>
+      <x-m>  2.92 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.0 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+     <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/press3-green.xml</path>
+    <offsets>
+      <x-m>  2.805 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.0 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/press3-red.xml</path>
+    <offsets>
+      <x-m>  2.82 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.0 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+     <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/press2-green.xml</path>
+    <offsets>
+      <x-m>  2.705 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.0 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/press2-red.xml</path>
+    <offsets>
+      <x-m>  2.72 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.0 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+     <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/press1-green.xml</path>
+    <offsets>
+      <x-m>  2.605 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.0 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/press1-red.xml</path>
+    <offsets>
+      <x-m>  2.62 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.0 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <!--engineur panel: electrics from TU-154b-->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/electrics/hz-200.xml</path>
+    <offsets>
+      <x-m>  2.26 </x-m>
+      <y-m>  1.277 </y-m>
+      <z-m> 0.23 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/electrics/v-200.xml</path>
+    <offsets>
+      <x-m>  2.33 </x-m>
+      <y-m>  1.277 </y-m>
+      <z-m> 0.23 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/electrics/a-200.xml</path>
+    <offsets>
+      <x-m>  2.40 </x-m>
+      <y-m>  1.277 </y-m>
+      <z-m> 0.23 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/electrics/v-27.xml</path>
+    <offsets>
+      <x-m>  2.29 </x-m>
+      <y-m>  1.277 </y-m>
+      <z-m> 0.04 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/electrics/a-27.xml</path>
+    <offsets>
+      <x-m>  2.37 </x-m>
+      <y-m>  1.277 </y-m>
+      <z-m> 0.04 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+    
+  <!-- Switches and Buttons -->
+  
+   <!-- Light switches block 1 Beacon-NAV-Instrument Lights-->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/bano1.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.091 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>
+ 
+    <!-- Beacon Text--> 
+
+  <text>
+    <name>Beacon</name>
+    <type type="string">literal</type>
+    <text type="string">...
+...</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.045</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  -0.14 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>Beacon</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+   
+   <!-- NAV Lights Text--> 
+
+  <text>
+    <name>Navlights</name>
+    <type type="string">literal</type>
+    <text type="string">Beacon NAV Strobe
+Lights</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.075</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  -0.091 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>Navlights</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+     <!-- Instrument Lights Text--> 
+
+  <text>
+    <name>Instrulights</name>
+    <type type="string">literal</type>
+    <text type="string">Instrument
+Lights</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  -0.041 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>Instrulights</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/azs4-5.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.20 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Landing-Taxi Lights Text -->
+  
+  <text>
+    <name>LandingTaxi</name>
+    <type type="string">literal</type>
+    <text type="string">Landing
+
+    
+      Taxi</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.04</max-height>
+    <max-width>0.025</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  -0.195 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>LandingTaxi</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+   <!-- Light switches block 2 -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/bano2.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.081 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>  
+
+ <!-- Cargo Door Switch Text -->
+
+  <text>
+    <name>CargoDoor</name>
+    <type type="string">literal</type>
+    <text type="string">Cargo
+Door</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.029 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>CargoDoor</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/red-lamp-cargodoor.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m>  0.026 </y-m>
+      <z-m>  0.223 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+   
+  
+ <!-- Paratroopers Switch Text  -->
+
+  <text>
+    <name>parachute_signal</name>
+    <type type="string">literal</type>
+    <text type="string">Parachuter Signal</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.081 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>parachute_signal</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+ <!-- ALS-Lighting Switch Text--> 
+
+  <text>
+    <name>ALS</name>
+    <type type="string">literal</type>
+    <text type="string">ALS
+Lights</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.132 </y-m>
+      <z-m>  0.17 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>ALS</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+
+    
+  <!-- Cargo rear panel -->
+ 
+  <!--Parachuter/Cargo Signal Lamps -->
+
+<model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-green.xml</path>
+    <offsets>
+      <x-m>  28.3 </x-m>
+      <y-m> -1.84 </y-m>
+      <z-m> -0.6 </z-m>
+      <heading-deg>170.0</heading-deg>
+    </offsets>
+  </model>
+  
+<model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-orange.xml</path>
+    <offsets>
+      <x-m>  28.3 </x-m>
+      <y-m> -1.84 </y-m>
+      <z-m> -0.5 </z-m>
+      <heading-deg>170.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-red.xml</path>
+    <offsets>
+      <x-m>  28.3 </x-m>
+      <y-m> -1.84 </y-m>
+      <z-m> -0.7 </z-m>
+      <heading-deg>170.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <!--Cargo Signal Lamps rightfront-->
+<model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-orange.xml</path>
+    <offsets>
+      <x-m>  6.198 </x-m>
+      <y-m> 2.30 </y-m>
+      <z-m> -0.94 </z-m>
+      <heading-deg>-90.0</heading-deg>
+    </offsets>
+  </model> 
+  
+<model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-green.xml</path>
+    <offsets>
+      <x-m>  6.198 </x-m>
+      <y-m> 2.32 </y-m>
+      <z-m> -1.10 </z-m>
+      <heading-deg>-90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-red.xml</path>
+    <offsets>
+      <x-m>  6.198 </x-m>
+      <y-m> 2.32 </y-m>
+      <z-m> -1.26 </z-m>
+      <heading-deg>-90.0</heading-deg>
+    </offsets>
+  </model>
+  
+    <!--Cargo Signal Lamps leftfront-->
+<model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-orange.xml</path>
+    <offsets>
+      <x-m>  6.198 </x-m>
+      <y-m> -2.32 </y-m>
+      <z-m> -0.94 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model> 
+  
+<model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-green.xml</path>
+    <offsets>
+      <x-m>  6.198 </x-m>
+      <y-m> -2.32 </y-m>
+      <z-m> -1.10 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-red.xml</path>
+    <offsets>
+      <x-m>  6.198 </x-m>
+      <y-m> -2.32 </y-m>
+      <z-m> -1.26 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- 6 Generator Switches -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/generator1.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.46 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/generator2.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.42 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/generator3.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.38 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/generator4.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.34 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+
+  <text>
+    <name>GEN</name>
+    <type type="string">literal</type>
+    <text type="string">Generator 1 - 4</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.012</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.08</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  -0.40 </y-m>
+      <z-m>  -0.138 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>GEN</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+  <!-- 6 Starter Buttons -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/starter1.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.46 </y-m>
+      <z-m>  -0.192 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/starter2.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.42 </y-m>
+      <z-m>  -0.192 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/starter3.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.38 </y-m>
+      <z-m>  -0.192 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/starter4.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.34 </y-m>
+      <z-m>  -0.192 </z-m>
+    </offsets>
+  </model>
+  
+  <text>
+    <name>START</name>
+    <type type="string">literal</type>
+    <text type="string">Engine Starter 1 - 4</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.012</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.12</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  -0.40 </y-m>
+      <z-m>  -0.215 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>START</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+
+  <!--Map case from TU-154B-->
+
+        <!-- Mapcase -->
+  
+  <model>
+    <name>MapCase</name>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/mapcase/mapcase.xml</path>
+    <offsets>
+      <x-m>  -0.545 </x-m>
+      <y-m> 0.157 </y-m>
+      <z-m>  -0.55 </z-m>      
+    </offsets>
+  </model> 
+  
+         <!-- Three Position Switch -->
+      
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/switch/doors.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.18 </y-m>
+      <z-m>  0.199 </z-m>
+    </offsets>
+  </model>
+  
+  <text>
+    <name>doors</name>
+    <type type="string">literal</type>
+    <text type="string">L+R
+      Doors</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.025</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> 0.205 </y-m>
+      <z-m>  0.20 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>doors</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>0.6</red>
+      <green>0.6</green>
+      <blue>0.9</blue>
+    </emission>
+  </animation>
+
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/doors.xml</path>
+    <offsets>
+      <x-m>  -0.0205 </x-m>
+      <y-m>  0.18 </y-m>
+      <z-m>  0.175 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
+  
+     <!-- Version Number -->
+  
+  <text>
+        <name>Version</name>
+        <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.737 </y-m>
+      <z-m>  0.15 </z-m>
+    </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property type="string">sim/multiplay/generic/string[1]</property>
+        <format type="string">%.7s</format>
+        <font>arial_black.txf</font>
+        <character-size>0.01</character-size>
+        <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+  </text>
+    
+    <animation>
+        <type>material</type>
+         <object-name>Version</object-name>         
+        <emission>
+            <red>0.35</red>
+            <green>0.35</green>
+            <blue>0.50</blue>
+        </emission>        
+    </animation>
+
+    <!-- Overhead Panel -->
+    
+    <!-- Switches block 5 MainBattery HelpBattery Inverter-->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/bano5.xml</path>
+    <offsets>
+      <x-m>  0.550 </x-m>
+      <y-m>  -0.45 </y-m>
+      <z-m>  0.795 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Text 1--> 
+
+  <text>
+    <name>text1</name>
+    <type type="string">literal</type>
+    <text type="string">Main
+Battery</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.505 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text1</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+
+    <!-- Text 2--> 
+
+  <text>
+    <name>text2</name>
+    <type type="string">literal</type>
+    <text type="string">Help
+Battery</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.453 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text2</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 3--> 
+
+  <text>
+    <name>text3</name>
+    <type type="string">literal</type>
+    <text type="string">Inverter</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.401 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text3</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+   <!-- Switches block 3 -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/bano3.xml</path>
+    <offsets>
+      <x-m>  0.550 </x-m>
+      <y-m>  -0.278 </y-m>
+      <z-m>  0.795 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </model>
+ 
+    <!-- Text 1--> 
+
+  <text>
+    <name>text1</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+ADF 1</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.333 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text1</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+
+    <!-- Text 2--> 
+
+  <text>
+    <name>text2</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+ADF 2</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.281 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text2</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 3--> 
+
+  <text>
+    <name>text3</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+HSI</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.229 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text3</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+  
+     <!-- Switches block 4 -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/bano4.xml</path>
+    <offsets>
+      <x-m>  0.550 </x-m>
+      <y-m>  -0.106 </y-m>
+      <z-m>  0.795 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </model>
+ 
+    <!-- Text 4 --> 
+
+  <text>
+    <name>text4</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+Kurs-MP1</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.161 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text4</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 5 --> 
+  
+  <text>
+    <name>text5</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+Kurs-MP2</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.109 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text5</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 6 --> 
+  
+    <text>
+    <name>text6</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+SKAWK</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.057 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text6</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+    <!-- Ikone Picture -->
+  
+  <model>
+    <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/bano/ikone.xml</path>
+    <offsets>
+      <x-m>  0.673 </x-m>
+      <y-m>  -0.493 </y-m>
+      <z-m>  0.874 </z-m>
+      <pitch-deg>68</pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

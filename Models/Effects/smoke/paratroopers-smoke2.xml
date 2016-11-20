@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+<PropertyList>
+	<particlesystem>
+		<name>paratrooper-smoke2</name>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+		<texture>paratrooper-trans.png</texture>
+		
+		<condition>
+		  <property>sim/multiplay/generic/int[1]</property>
+		</condition>
+		
+		<emissive>false</emissive>
+		<lighting>false</lighting>
+		<align>billboard</align>
+		<attach>world</attach>
+		<placer>
+			<type>point</type>
+		</placer>
+		<shooter>
+			<theta-min-deg>-20</theta-min-deg>
+			<theta-max-deg>20</theta-max-deg>
+			<phi-min-deg>-20</phi-min-deg>
+			<phi-max-deg>20</phi-max-deg>
+			<speed-mps>
+				<value>-2</value>
+				<spread>10</spread>
+			</speed-mps>
+			<rotation-speed>
+				<x-min-deg-sec>0</x-min-deg-sec>
+				<y-min-deg-sec>0</y-min-deg-sec>
+				<z-min-deg-sec>0</z-min-deg-sec>
+				<x-max-deg-sec>0</x-max-deg-sec>
+				<y-max-deg-sec>0</y-max-deg-sec>
+				<z-max-deg-sec>0</z-max-deg-sec>
+			</rotation-speed>
+		</shooter>
+		<counter>
+			<particles-per-sec>
+				<value>1</value>
+				<spread>1</spread>
+			</particles-per-sec>
+		</counter>
+		<particle>
+			<start>
+				<color>
+					<red><value>1</value></red>
+					<green><value>1</value></green>
+					<blue><value>1</value></blue>
+					<alpha><value>1</value></alpha>
+				</color>
+				<size>
+					<value>3.4</value>
+				</size>
+			</start>
+			<end>
+				<color>
+					<red><value>1</value></red>
+					<green><value>1</value></green>
+					<blue><value>1</value></blue>
+					<alpha><value>1</value></alpha>
+				</color>
+				<size>
+					<value>3.4</value>
+				</size>
+			</end>
+			<life-sec>
+				<value>750</value>
+			</life-sec>
+			<mass-kg>150</mass-kg>
+			<radius-m>1.95</radius-m>
+		</particle>
+		<program>
+			<fluid>air</fluid>
+			<gravity>true</gravity>
+			<wind>true</wind>
+		</program>
+	</particlesystem>
+</PropertyList>

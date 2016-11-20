@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+
+<!--model from FG data
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+
+  <path>Rosenbauer_FLF_Panther8x8.ac</path>
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>2500</max-m>
+  </animation>
+  
+  <!--Warning lamp-->
+<animation>
+  <type>material</type>
+  <object-name>orange</object-name>
+  <emission>
+    <red>1.0</red>
+    <green>0.20</green>
+    <blue>0.20</blue>
+    <factor-prop>sim/multiplay/generic/int[4]</factor-prop>
+  </emission>
+</animation>
+  
+  <animation>
+    <name>Rosenbauer1</name>    
+  </animation>
+  
+  <animation>
+  <type>scale</type>
+  <name>Rosenbauer1</name>  
+  <property>sim/multiplay/generic/int[19]</property>
+  <offset>1</offset>
+  <x-max>0.9</x-max>
+  <y-max>0.9</y-max>
+  <z-max>0.9</z-max>
+  <x-factor>0.9</x-factor>
+  <y-factor>0.9</y-factor>
+  <z-factor>0.9</z-factor>
+ </animation>
+  
+  
+  <animation>
+    <type>translate</type>
+    <name>Rosenbauer1</name>
+    <property>sim/multiplay/generic/float[3]</property>
+    <interpolation>
+      <entry><ind> 75000 </ind><dep> 34.0 </dep></entry>
+      <entry><ind> 60000 </ind><dep> 30.0 </dep></entry>
+      <entry><ind> 40000 </ind><dep> 26.0 </dep></entry>
+      <entry><ind> 19000 </ind><dep> 9.5 </dep></entry>
+      <entry><ind> 8000 </ind><dep> 5.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -20.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <name>Rosenbauer1</name>
+    <property>sim/multiplay/generic/float[3]</property>
+    <interpolation>
+      <entry><ind> 75000 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 60000 </ind><dep>  0.0 </dep></entry>      
+      <entry><ind> 40000 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 34000 </ind><dep>  10.0 </dep></entry>
+      <entry><ind> 28000 </ind><dep>  16.0 </dep></entry>
+      <entry><ind> 24000 </ind><dep>  12.0 </dep></entry>
+      <entry><ind> 21000 </ind><dep>  6.0 </dep></entry>
+      <entry><ind> 19000 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.0 </dep></entry>      
+    </interpolation>
+    <center>
+      <x-m>  0.0 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.0 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>translate</type>
+    <name>Rosenbauer1</name>
+    <property>sim/multiplay/generic/float[3]</property>
+    <interpolation>      
+      <entry><ind> 75000 </ind><dep>  2.55 </dep></entry>
+      <entry><ind> 60000 </ind><dep>  2.55 </dep></entry>
+      <entry><ind> 40000 </ind><dep>  2.55 </dep></entry>
+      <entry><ind> 34000 </ind><dep>  -1.40 </dep></entry>
+      <entry><ind> 28000 </ind><dep>  -3.60 </dep></entry>
+      <entry><ind> 24000 </ind><dep>  -2.50 </dep></entry>
+      <entry><ind> 19000 </ind><dep>  -0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep>  -0.35 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
