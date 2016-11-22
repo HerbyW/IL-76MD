@@ -7,7 +7,7 @@
     #############################################################################	  
     -->
 <!--
-Copyright (C) Herbert Wagner Nov2016
+Copyright (C) Herbert Wagner Dec2014-2016
 see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 <!-- KURS-MP control gauge
@@ -268,7 +268,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <property>instrumentation/kurs-mp-1/digit-h-ones</property>
       <step>-1.0</step>
       <min>0.0</min>
-      <max>9.0</max>
+      <max>10.0</max>
       <wrap>false</wrap>
     </binding>
     <binding>
@@ -290,7 +290,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <property>instrumentation/kurs-mp-1/digit-h-ones</property>
       <step>1.0</step>
       <min>0.0</min>
-      <max>9.0</max>
+      <max>10.0</max>
       <wrap>true</wrap>
     </binding>
     <binding>
@@ -405,7 +405,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <property>instrumentation/kurs-mp-1/digit-h-ones</property>
       <step>-1.0</step>
       <min>0.0</min>
-      <max>9.0</max>
+      <max>10.0</max>
       <wrap>false</wrap>
     </binding>
     <binding>
@@ -428,7 +428,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <property>instrumentation/kurs-mp-1/digit-h-ones</property>
       <step>1.0</step>
       <min>0.0</min>
-      <max>9.0</max>
+      <max>10.0</max>
       <wrap>true</wrap>
     </binding>
     <binding>
