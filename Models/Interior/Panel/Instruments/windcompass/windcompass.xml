@@ -56,7 +56,7 @@
   <object-name>n2</object-name>
   <property>environment/wind-from-heading-deg</property>
   <factor>-1.0</factor>
-  <offset-deg> -108 </offset-deg>
+  <offset-deg> -288 </offset-deg>
   <center>
    <x-m>0.0</x-m>
    <y-m>0.000</y-m>
@@ -68,6 +68,20 @@
    <z>0.0</z>
   </axis>
  </animation>
+ 
+   <animation>
+    <type>rotate</type>
+    <object-name>n2</object-name>
+    <property>orientation/heading-deg</property>    
+      <condition>
+       <property>instrumentation/heading-indicator[0]/serviceable</property>
+      </condition>    
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
 
 
  <!-- indicated air speed -->
@@ -98,7 +112,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>gs100</object-name>
-        <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <property>velocities/groundspeed-kt</property>
         <factor>0.001</factor>
 			<step>100</step>
 			<bias>0.5</bias>
@@ -112,7 +126,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>gs10</object-name>
-        <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <property>velocities/groundspeed-kt</property>
         <factor>0.01</factor>
 			<step>10</step>
 			<bias>0.5</bias>
@@ -126,7 +140,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>gs1</object-name>
-        <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <property>velocities/groundspeed-kt</property>
         <factor>0.1</factor>
 			<step>1</step>
 			<bias>0.5</bias>
