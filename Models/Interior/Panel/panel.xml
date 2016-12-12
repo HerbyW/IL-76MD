@@ -932,9 +932,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <model>
     <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf1.xml</path>
     <offsets>
-      <x-m>  2.04 </x-m>
+      <x-m>  2.14 </x-m>
       <y-m>  -1.291 </y-m>
-      <z-m> 0.13 </z-m>
+      <z-m> 0.06 </z-m>
       <heading-deg>90.0</heading-deg>
       <pitch-deg>0</pitch-deg>
     </offsets>
@@ -965,9 +965,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <model>
     <path>Aircraft/IL-76MD/Models/Interior/Panel/Instruments/redlamp/red-lamp-nav2.xml</path>
     <offsets>
-      <x-m>  2.14 </x-m>
+      <x-m>  2.04 </x-m>
       <y-m>  -1.291 </y-m>
-      <z-m> 0.06 </z-m>
+      <z-m> 0.13 </z-m>
       <heading-deg>90.0</heading-deg>
       <pitch-deg>0</pitch-deg>
     </offsets>

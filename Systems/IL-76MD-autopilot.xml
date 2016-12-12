@@ -263,7 +263,46 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </config>
   </pid-controller>
 
-
+      <!-- Rudder Control -->
+    <pi-simple-controller>
+      <name>Rudder Control</name>
+      <debug>false</debug>
+      <enable>
+	<condition>
+	  <or>
+	    <equals>
+	      <property>/autopilot/locks/heading</property>
+	      <value>dg-heading-hold</value>
+	    </equals>
+	    <equals>
+	      <property>/autopilot/locks/heading</property>
+	      <value>true-heading-hold</value>
+	    </equals>
+	    <equals>
+	      <property>/autopilot/locks/heading</property>
+	      <value>nav1-hold</value>
+	    </equals>
+	    <equals>
+	      <property>/autopilot/locks/heading</property>
+	      <value>wing-leveler</value>
+	    </equals>
+	  </or>
+	</condition>
+      </enable>
+      <input>
+	<property>/orientation/roll-deg</property>
+      </input>
+      <reference>0.0</reference>
+      <output>
+	<property>/controls/flight/rudder-trim</property>
+      </output>
+      <config>
+	<Kp>-0.004</Kp>
+	<u_min>-0.4</u_min>
+	<u_max>0.4</u_max>
+      </config>
+    </pi-simple-controller>
+    
  <!-- =============================================================== -->
  <!-- Pitch Axis Modes                                                -->
  <!-- =============================================================== -->
