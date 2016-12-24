@@ -87,7 +87,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 
     <description>Ilyushin Il-76MD</description>
     <author>Wagner Herbert (FDM, animations, instrumentation updates), Baranger Emmanuel (3D/FDM)</author>
-    <aircraft-version>3.0.2</aircraft-version>
+    <aircraft-version>4.0.1</aircraft-version>
     <status>beta</status>
     <aero>IL-76MD-yasim</aero>
     <rating>
@@ -110,7 +110,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         <file type="string">default</file>
       </livery>
       <il76md>
-	<version type="string">3.0.2</version>
+	<version type="string">4.0.1</version>
 	<scalpel type="string">off</scalpel>
 	<tents type="double">0</tents>
       </il76md>

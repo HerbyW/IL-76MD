@@ -2598,7 +2598,109 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <z-m> 0 </z-m>
     </offsets>
   </model>
-
+  
+      <!-- Ambient special effect lamps-->
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> 2.086 </x-m>
+      <y-m> 2.423 </y-m>
+      <z-m> -5.592 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> 2.086 </x-m>
+      <y-m> -2.423 </y-m>
+      <z-m> -5.592 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -5.162 </x-m>
+      <y-m> 2.581 </y-m>
+      <z-m> -5.6 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -5.162 </x-m>
+      <y-m> -2.581 </y-m>
+      <z-m> -5.6 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -17.661 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> -5.529 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -2.749 </x-m>
+      <y-m>  8.74 </y-m>
+      <z-m> -1.621 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -2.749 </x-m>
+      <y-m> -8.74 </y-m>
+      <z-m> -1.621 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <condition>
+      <property>sim/multiplay/generic/float[9]</property>
+   </condition>
+    <offsets>
+      <x-m> -15.093 </x-m>
+      <y-m> -2.191 </y-m>
+      <z-m> -2.746 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <condition>
+      <property>sim/multiplay/generic/float[11]</property>
+   </condition>
+    <offsets>
+      <x-m> -15.093 </x-m>
+      <y-m>  2.191 </y-m>
+      <z-m> -2.746 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <condition>
+      <property>sim/multiplay/generic/float[7]</property>
+   </condition>
+    <offsets>
+      <x-m> 9.116 </x-m>
+      <y-m>  1.913 </y-m>
+      <z-m> -4.038 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/IL-76MD/Models/lights/BlueAmbientLight.xml</path>
+    <condition>
+      <property>sim/multiplay/generic/float[7]</property>
+   </condition>
+    <offsets>
+      <x-m> 9.116 </x-m>
+      <y-m> -1.913 </y-m>
+      <z-m> -4.038 </z-m>
+    </offsets>
+  </model>
+  
     <!--Internal Cabin lights for Rembrand, switch: bano-->
  <model>
   <path>Aircraft/IL-76MD/Models/lights/headlight-tiny.xml</path>

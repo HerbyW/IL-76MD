@@ -11,29 +11,170 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   
   <!-- Lamps-->
   
-  <animation>
-    <type>select</type>
-    <object-name>landinglamp1</object-name>
-    <object-name>landinglamp2</object-name>   
-    <condition>
-      <or>
-	  <property>sim/multiplay/generic/int[9]</property>
+   <animation>
+     <type>material</type>
+     <object-name>spot_glass1</object-name>
+     <object-name>spot_glass2</object-name>
+     <emission>
+       <factor-prop>sim/multiplay/generic/int[10]</factor-prop>
+       <red>   1 </red>
+       <green> 1 </green>
+       <blue>  0.5 </blue>
+     </emission>
+   </animation>
+   
+   <animation>
+      <type>select</type>
+      <object-name>spot_glass1</object-name>
+     <object-name>spot_glass2</object-name>
+     <condition>
+       <and>
+	  <property>sim/multiplay/generic/int[19]</property>
 	  <property>sim/multiplay/generic/int[10]</property>
-	</or>
-    </condition>
+	  <not><property>sim/multiplay/generic/int[9]</property></not>
+       </and>  
+      </condition>
+    </animation>
+   
+   <animation>
+     <type>material</type>
+     <object-name>spot_glass1.001</object-name>
+     <object-name>spot_glass2.001</object-name>
+     <emission>
+       <factor-prop>sim/multiplay/generic/int[9]</factor-prop>
+       <red>   1 </red>
+       <green> 1 </green>
+       <blue>  1 </blue>
+     </emission>
+   </animation>
+   
+   <animation>
+      <type>select</type>
+      <object-name>spot_glass1.001</object-name>
+     <object-name>spot_glass2.001</object-name>
+      <condition>
+       <and>
+	  <property>sim/multiplay/generic/int[19]</property>
+	  <not><property>sim/multiplay/generic/int[10]</property></not>
+       </and>  
+      </condition>
+    </animation>
+  
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>landinglamp1</object-name>
+    <object-name>spot_glass1</object-name>
+    <object-name>spot_glass1.001</object-name>
+    <property>sim/multiplay/generic/int[19]</property>
+    <factor> 85 </factor>
+    <center>
+      <x-m> -21.313 </x-m>
+      <y-m> 0.712 </y-m>
+      <z-m> -5.003 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> -1.1 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>landinglamp2</object-name>
+    <object-name>spot_glass2</object-name>
+    <object-name>spot_glass2.001</object-name>
+    <property>sim/multiplay/generic/int[19]</property>
+    <factor> -85 </factor>
+    <center>
+      <x-m> -21.313 </x-m>
+      <y-m> -0.712 </y-m>
+      <z-m> -5.003 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> -1.1 </z>
+    </axis>
+  </animation>
+  
+  <!-- landing lights out -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>landinglamp1</object-name>
+    <object-name>spot_glass1</object-name>
+    <object-name>spot_glass1.001</object-name>
+    <property>sim/multiplay/generic/int[9]</property>
+    <factor> -85 </factor>
+    <center>
+      <x-m> -21.313 </x-m>
+      <y-m>  0.712 </y-m>
+      <z-m> -5.003 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> -1.1 </z>
+    </axis>
   </animation>
   
   <animation>
-    <type>select</type>
+    <type>rotate</type>
+    <object-name>landinglamp1</object-name>
     <object-name>spot_glass1</object-name>
-    <object-name>spot_glass2</object-name>    
-    <condition>
-	<or>
-	  <property>sim/multiplay/generic/int[9]</property>
-	  <property>sim/multiplay/generic/int[10]</property>
-	</or>
-    </condition>
+    <object-name>spot_glass1.001</object-name>
+    <property>sim/multiplay/generic/int[10]</property>
+    <factor> -85 </factor>
+    <center>
+      <x-m> -21.313 </x-m>
+      <y-m>  0.712 </y-m>
+      <z-m> -5.003 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> -1.1 </z>
+    </axis>
   </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>landinglamp2</object-name>
+    <object-name>spot_glass2</object-name>
+    <object-name>spot_glass2.001</object-name>
+    <property>sim/multiplay/generic/int[9]</property>
+    <factor> 85 </factor>
+    <center>
+      <x-m> -21.313 </x-m>
+      <y-m> -0.712 </y-m>
+      <z-m> -5.003 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> -1.1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>landinglamp2</object-name>
+    <object-name>spot_glass2</object-name>
+    <object-name>spot_glass2.001</object-name>
+    <property>sim/multiplay/generic/int[10]</property>
+    <factor> 85 </factor>
+    <center>
+      <x-m> -21.313 </x-m>
+      <y-m> -0.712 </y-m>
+      <z-m> -5.003 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> -1.1 </z>
+    </axis>
+  </animation>  
   
   <!-- No preview for fgrun-->
   <animation>

@@ -115,6 +115,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <object-name>treppe-rechts</object-name>
     <condition>
       <property>sim/multiplay/generic/int[16]</property>
+      <less-than>
+	<property>sim/multiplay/generic/float[5]</property>
+	<value>1</value>
+      </less-than>
     </condition>
   </animation>
 
