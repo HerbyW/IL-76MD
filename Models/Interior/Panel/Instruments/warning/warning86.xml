@@ -40,12 +40,18 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>material</type>
   <object-name>text</object-name>
-   <condition>
-     <greater-than>
+  <condition>
+    <and>
+      <greater-than>
 	<property>controls/gear/brake-parking</property>
 	<value>0</value>
-     </greater-than>
-    </condition>  
+      </greater-than>
+      <greater-than>
+	<property>controls/switches/gauge-light</property>
+	<value>0</value>
+      </greater-than>
+    </and>
+  </condition>  
   <emission>
     <red>1.0</red>
     <green>1.0</green>

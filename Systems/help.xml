@@ -54,12 +54,12 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<desc>Change Pilot Ramp View</desc>
       </key>
   <text>
-Wellcome to version 4.0.1 of IL-76MD
+Wellcome to version 4.0.2 of IL-76MD
 
-- Check cargo and/or payload: press y to switch to the ramp control and open the red box, for loading paratroopers.
-  They need open back door and both side doors to jump out, then use the switch on the panel to give the signal :)
-- many systems as in the AN-12BK, AN-22A or Tu-160-Blackjack, refer to them for more help
-- extra animations for Livery Scalpel (shut down engines)
+- Check cargo and/or payload: press y to switch to the ramp control and open the red box, for loading paratroopers or fire trucks.
+- Paratroopers need open back door and both side doors open to jump out, then use the switch on the panel to give the signal :)
+- Many systems as in the AN-12BK, AN-22A or Tu-160-Blackjack, refer to them for more help
+- Extra animations for Livery Scalpel (shut down engines)
 
 Il-76MD Skal'pel MT - Mobile Hospital
 Il-76MD Built without military equipment
@@ -68,7 +68,7 @@ The aircraft is meant for parachute operations and landing of military personnel
 cargoes, fuel and containers. By reinforcing its main structural elements (airframe and landing gear),
 the maximum takeoff weight and commercial load have been increased.
 
-Main technical characteristics
+Main technical characteristics (wikipedia)
 
 Dimensional characteristics
 Length, m 46,6

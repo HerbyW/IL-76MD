@@ -62,11 +62,17 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>select</type>
   <object-name>lamp</object-name>
-  <condition>    
-       <equals>
-      	<property>/instrumentation/altimeter/setting-inhg</property>
-        <value>29.92</value>
-       </equals>       
+  <condition>
+    <and>
+      <equals>
+	<property>/instrumentation/altimeter/setting-inhg</property>
+	<value>29.92</value>
+      </equals>
+      <greater-than>
+	<property>controls/switches/gauge-light</property>
+	<value>0</value>
+      </greater-than>
+    </and>
   </condition>
 </animation>
   

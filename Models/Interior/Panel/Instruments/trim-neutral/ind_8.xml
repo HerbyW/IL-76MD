@@ -49,10 +49,16 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>material</type>
   <object-name>text_1</object-name>
-   <condition>    
+  <condition>
+    <and>
       <property>controls/switches/metar</property>
-      <value>1</value>     
-   </condition>
+      <value>1</value>
+      <greater-than>
+	<property>controls/switches/gauge-light</property>
+	<value>0</value>
+      </greater-than>
+    </and>
+  </condition>
   <emission>
     <red>1.0</red>
     <green>1.0</green>
