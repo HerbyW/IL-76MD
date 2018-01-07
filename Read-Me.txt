@@ -33,3 +33,5 @@ Many files for light and smoke are derivated from 707 by Lake of Constance Hanga
 Each xml-file holds own copyright notices.
 
 Most content is GPL some not.
+
+Instalation: Unzip and copy into the aircraft folder.
