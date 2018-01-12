@@ -65,7 +65,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <condition>
     <and>
       <equals>
-	<property>/instrumentation/altimeter/setting-inhg</property>
+	<property>instrumentation/altimeter/setting-inhg</property>
 	<value>29.92</value>
       </equals>
       <greater-than>
